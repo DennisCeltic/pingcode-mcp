@@ -11,4 +11,13 @@ export async function listProjects(params = {}) {
 export async function getProject(projectId) {
     return pingCodeClient.get(`/v1/project/projects/${projectId}`);
 }
+export async function createProject(params) {
+    return pingCodeClient.post('/v1/project/projects', {
+        name: params.name,
+        type: params.type ?? 'scrum',
+        visibility: params.visibility ?? 'private',
+        description: params.description ?? '',
+        assignee_id: params.assignee_id,
+    });
+}
 //# sourceMappingURL=project.js.map

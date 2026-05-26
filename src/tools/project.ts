@@ -6,6 +6,14 @@ export interface ListProjectsParams {
   page_size?: number;
 }
 
+export interface CreateProjectParams {
+  name: string;
+  type?: 'scrum' | 'kanban';
+  visibility?: 'private' | 'public';
+  description?: string;
+  assignee_id?: string;
+}
+
 export async function listProjects(params: ListProjectsParams = {}) {
   const query = new URLSearchParams();
   
@@ -19,4 +27,14 @@ export async function listProjects(params: ListProjectsParams = {}) {
 
 export async function getProject(projectId: string) {
   return pingCodeClient.get(`/v1/project/projects/${projectId}`);
+}
+
+export async function createProject(params: CreateProjectParams) {
+  return pingCodeClient.post('/v1/project/projects', {
+    name: params.name,
+    type: params.type ?? 'scrum',
+    visibility: params.visibility ?? 'private',
+    description: params.description ?? '',
+    assignee_id: params.assignee_id,
+  });
 }

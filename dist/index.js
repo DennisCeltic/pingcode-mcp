@@ -5,7 +5,7 @@ import { CallToolRequestSchema, ListToolsRequestSchema, } from '@modelcontextpro
 import { tokenManager, runAuthSetup } from './auth/index.js';
 import { pingCodeClient } from './client/index.js';
 import { listWorkItems, getWorkItem, createWorkItem, updateWorkItem, } from './tools/work-item.js';
-import { listProjects, getProject } from './tools/project.js';
+import { listProjects, getProject, createProject } from './tools/project.js';
 import { listSprints, getSprint } from './tools/sprint.js';
 import { createWorkload, listWorkloads, listWorkloadTypes, } from './tools/workload.js';
 import { createComment, listComments, } from './tools/comment.js';
@@ -79,6 +79,20 @@ const TOOLS = [
                 project_id: { type: 'string', description: '项目ID' },
             },
             required: ['project_id'],
+        },
+    },
+    {
+        name: 'pingcode__create_project',
+        description: '创建一个新的项目',
+        inputSchema: {
+            type: 'object',
+            properties: {
+                name: { type: 'string', description: '项目名称' },
+                type_id: { type: 'string', description: '项目类型: scrum 或 kanban', enum: ['scrum', 'kanban'] },
+                description: { type: 'string', description: '项目描述' },
+                assignee_id: { type: 'string', description: '项目负责人的用户ID' },
+            },
+            required: ['name'],
         },
     },
     {
@@ -534,6 +548,22 @@ async function handleToolCall(request) {
             }
             case 'pingcode__get_project': {
                 const data = await getProject(String(args?.project_id));
+                return {
+                    content: [
+                        {
+                            type: 'text',
+                            text: JSON.stringify(data, null, 2),
+                        },
+                    ],
+                };
+            }
+            case 'pingcode__create_project': {
+                const data = await createProject({
+                    name: String(args?.name),
+                    type: args?.type_id || 'scrum',
+                    description: args?.description,
+                    assignee_id: args?.assignee_id,
+                });
                 return {
                     content: [
                         {
