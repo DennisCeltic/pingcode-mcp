@@ -1,0 +1,31 @@
+{
+  "name": "pingcode-mcp",
+  "version": "1.0.0",
+  "description": "PingCode MCP Server - AI-powered PingCode integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pingcode-mcp": "dist/index.js",
+    "pingcode-mcp-cli": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test:integration": "npx tsx scripts/integration-test.ts"
+  },
+  "keywords": ["mcp", "pingcode", "ai", "model-context-protocol"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "axios": "^1.8.4",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.12",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

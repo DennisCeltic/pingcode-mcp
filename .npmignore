@@ -1,0 +1,9 @@
+src/
+scripts/
+.agents/
+.trae/
+node_modules/
+*.ts
+!dist/**/*.d.ts
+tsconfig.json
+.npmignore

@@ -1,0 +1,1 @@
+{"version":3,"file":"sprint.d.ts","sourceRoot":"","sources":["../../src/tools/sprint.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,iBAAiB;IAChC,UAAU,CAAC,EAAE,MAAM,CAAC;IACpB,UAAU,CAAC,EAAE,MAAM,CAAC;IACpB,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB;AAED,wBAAsB,WAAW,CAAC,MAAM,GAAE,iBAAsB,oBAS/D;AAED,wBAAsB,SAAS,CAAC,QAAQ,EAAE,MAAM,oBAE/C"}

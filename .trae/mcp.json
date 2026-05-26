@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "pingcode": {
+      "command": "node",
+      "args": [
+        "/Users/dennis/Documents/trae_projects/pingcode-mcp/dist/index.js"
+      ],
+      "env": {}
+    },
+    "superpowers": {
+      "command": "node",
+      "args": [
+        "/Users/dennis/Documents/trae_projects/superpowers-mcp/build/index.js"
+      ],
+      "env": {}
+    }
+  }
+}
