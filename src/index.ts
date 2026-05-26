@@ -16,7 +16,9 @@ import {
   createWorkItem,
   updateWorkItem,
 } from './tools/work-item.js';
-import { listProjects, getProject, createProject } from './tools/project.js';
+import { listProjects, getProject, createProject, addProjectMembers } from './tools/project.js';
+import { addProductMembers } from './tools/product.js';
+import { addTestLibraryMembers } from './tools/testhub.js';
 import { listSprints, getSprint } from './tools/sprint.js';
 import {
   createWorkload,
@@ -43,6 +45,7 @@ import {
   listWikiSpaces,
   listWikiPages,
   getWikiPage,
+  addWikiMembers,
 } from './tools/wiki.js';
 import {
   listAttachments,
@@ -125,11 +128,64 @@ const TOOLS: Tool[] = [
       type: 'object',
       properties: {
         name: { type: 'string', description: '项目名称' },
+        identifier: { type: 'string', description: '项目标识（全局唯一），如 PC-MCP' },
         type_id: { type: 'string', description: '项目类型: scrum 或 kanban', enum: ['scrum', 'kanban'] },
         description: { type: 'string', description: '项目描述' },
         assignee_id: { type: 'string', description: '项目负责人的用户ID' },
       },
-      required: ['name'],
+      required: ['name', 'identifier'],
+    },
+  },
+  {
+    name: 'pingcode__add_project_members',
+     description: '向项目中添加成员',
+     inputSchema: {
+       type: 'object',
+       properties: {
+         project_id: { type: 'string', description: '项目ID' },
+         user_ids: { type: 'string', description: '用户ID列表，使用逗号分割，如 uid1,uid2,uid3' },
+         role_id: { type: 'string', description: '角色ID，不填则使用项目默认角色' },
+       },
+       required: ['project_id', 'user_ids'],
+    },
+  },
+  {
+    name: 'pingcode__add_product_members',
+    description: '向产品中添加成员',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        product_id: { type: 'string', description: '产品ID' },
+        user_ids: { type: 'string', description: '用户ID列表，使用逗号分割，如 uid1,uid2,uid3' },
+        role_id: { type: 'string', description: '角色ID，不填则使用产品默认角色' },
+      },
+      required: ['product_id', 'user_ids'],
+    },
+  },
+  {
+    name: 'pingcode__add_test_library_members',
+    description: '向测试库中添加成员',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        library_id: { type: 'string', description: '测试库ID' },
+        user_ids: { type: 'string', description: '用户ID列表，使用逗号分割，如 uid1,uid2,uid3' },
+        role_id: { type: 'string', description: '角色ID，不填则使用测试库默认角色' },
+      },
+      required: ['library_id', 'user_ids'],
+    },
+  },
+  {
+    name: 'pingcode__add_wiki_members',
+    description: '向知识空间(Wiki)中添加成员',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        space_id: { type: 'string', description: '知识空间ID' },
+        user_ids: { type: 'string', description: '用户ID列表，使用逗号分割，如 uid1,uid2,uid3' },
+        role_id: { type: 'string', description: '角色ID，不填则使用空间默认角色' },
+      },
+      required: ['space_id', 'user_ids'],
     },
   },
   {
@@ -607,9 +663,82 @@ async function handleToolCall(request: CallToolRequest) {
       case 'pingcode__create_project': {
         const data = await createProject({
           name: String(args?.name),
+          identifier: String(args?.identifier),
           type: (args?.type_id as 'scrum' | 'kanban') || 'scrum',
           description: args?.description as string | undefined,
           assignee_id: args?.assignee_id as string | undefined,
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify(data, null, 2),
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__add_project_members': {
+        const userIdsStr = String(args?.user_ids);
+        const user_ids = userIdsStr.split(',').map((s: string) => s.trim()).filter(Boolean);
+        const data = await addProjectMembers({
+          project_id: String(args?.project_id),
+          user_ids,
+          role_id: args?.role_id as string | undefined,
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify(data, null, 2),
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__add_product_members': {
+        const userIdsStr = String(args?.user_ids);
+        const user_ids = userIdsStr.split(',').map((s: string) => s.trim()).filter(Boolean);
+        const data = await addProductMembers({
+          product_id: String(args?.product_id),
+          user_ids,
+          role_id: args?.role_id as string | undefined,
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify(data, null, 2),
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__add_test_library_members': {
+        const userIdsStr = String(args?.user_ids);
+        const user_ids = userIdsStr.split(',').map((s: string) => s.trim()).filter(Boolean);
+        const data = await addTestLibraryMembers({
+          library_id: String(args?.library_id),
+          user_ids,
+          role_id: args?.role_id as string | undefined,
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify(data, null, 2),
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__add_wiki_members': {
+        const userIdsStr = String(args?.user_ids);
+        const user_ids = userIdsStr.split(',').map((s: string) => s.trim()).filter(Boolean);
+        const data = await addWikiMembers({
+          space_id: String(args?.space_id),
+          user_ids,
+          role_id: args?.role_id as string | undefined,
         });
         return {
           content: [

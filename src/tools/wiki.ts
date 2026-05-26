@@ -39,3 +39,23 @@ export async function getWikiPage(params: GetWikiPageParams) {
   const formatType = params.format_type ?? 'markdown';
   return pingCodeClient.get(`/v1/wiki/pages/${params.page_id}/content?format_type=${formatType}`);
 }
+
+export interface AddWikiMembersParams {
+  space_id: string;
+  user_ids: string[];
+  role_id?: string;
+}
+
+export async function addWikiMembers(params: AddWikiMembersParams) {
+  const results: unknown[] = [];
+  for (const uid of params.user_ids) {
+    const body: { user_id: string; role_id?: string } = { user_id: uid };
+    if (params.role_id) body.role_id = params.role_id;
+    const result = await pingCodeClient.post(
+      `/v1/wiki/spaces/${params.space_id}/members`,
+      body,
+    );
+    results.push(result);
+  }
+  return results.length === 1 ? results[0] : results;
+}

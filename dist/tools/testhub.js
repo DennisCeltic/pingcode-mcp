@@ -1,0 +1,13 @@
+import { pingCodeClient } from '../client/index.js';
+export async function addTestLibraryMembers(params) {
+    const results = [];
+    for (const uid of params.user_ids) {
+        const body = { user_id: uid };
+        if (params.role_id)
+            body.role_id = params.role_id;
+        const result = await pingCodeClient.post(`/v1/testhub/libraries/${params.library_id}/members`, body);
+        results.push(result);
+    }
+    return results.length === 1 ? results[0] : results;
+}
+//# sourceMappingURL=testhub.js.map

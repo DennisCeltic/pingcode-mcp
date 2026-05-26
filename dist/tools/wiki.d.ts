@@ -14,4 +14,10 @@ export interface GetWikiPageParams {
 export declare function listWikiSpaces(params?: ListWikiSpacesParams): Promise<unknown>;
 export declare function listWikiPages(params: ListWikiPagesParams): Promise<unknown>;
 export declare function getWikiPage(params: GetWikiPageParams): Promise<unknown>;
+export interface AddWikiMembersParams {
+    space_id: string;
+    user_ids: string[];
+    role_id?: string;
+}
+export declare function addWikiMembers(params: AddWikiMembersParams): Promise<unknown>;
 //# sourceMappingURL=wiki.d.ts.map

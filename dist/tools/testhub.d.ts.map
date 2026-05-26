@@ -1,0 +1,1 @@
+{"version":3,"file":"testhub.d.ts","sourceRoot":"","sources":["../../src/tools/testhub.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,2BAA2B;IAC1C,UAAU,EAAE,MAAM,CAAC;IACnB,QAAQ,EAAE,MAAM,EAAE,CAAC;IACnB,OAAO,CAAC,EAAE,MAAM,CAAC;CAClB;AAED,wBAAsB,qBAAqB,CAAC,MAAM,EAAE,2BAA2B,oBAY9E"}

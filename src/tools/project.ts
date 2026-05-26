@@ -8,6 +8,7 @@ export interface ListProjectsParams {
 
 export interface CreateProjectParams {
   name: string;
+  identifier: string;
   type?: 'scrum' | 'kanban';
   visibility?: 'private' | 'public';
   description?: string;
@@ -32,9 +33,30 @@ export async function getProject(projectId: string) {
 export async function createProject(params: CreateProjectParams) {
   return pingCodeClient.post('/v1/project/projects', {
     name: params.name,
+    identifier: params.identifier,
     type: params.type ?? 'scrum',
     visibility: params.visibility ?? 'private',
     description: params.description ?? '',
     assignee_id: params.assignee_id,
   });
+}
+
+export interface AddProjectMembersParams {
+  project_id: string;
+  user_ids: string[];
+  role_id?: string;
+}
+
+export async function addProjectMembers(params: AddProjectMembersParams) {
+  const results: unknown[] = [];
+  for (const uid of params.user_ids) {
+    const body: { user_id: string; role_id?: string } = { user_id: uid };
+    if (params.role_id) body.role_id = params.role_id;
+    const result = await pingCodeClient.post(
+      `/v1/project/projects/${params.project_id}/members`,
+      body,
+    );
+    results.push(result);
+  }
+  return results.length === 1 ? results[0] : results;
 }
