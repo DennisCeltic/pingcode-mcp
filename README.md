@@ -26,7 +26,7 @@ PingCode MCP Server 是一个基于 [Model Context Protocol (MCP)](https://model
 
 ```bash
 # 1. 克隆仓库
-git clone <repository-url>
+git clone https://github.com/DennisCeltic/pingcode-mcp.git
 cd pingcode-mcp
 
 # 2. 安装依赖
@@ -241,7 +241,7 @@ pingcode-mcp configure
 pingcode-mcp status
 ```
 
-## 可用 Tools（共 28 个）
+## 可用 Tools（共 29 个）
 
 ### 系统管理
 
@@ -330,7 +330,8 @@ pingcode-mcp status
 
 | Tool | 描述 | 必填参数 |
 |------|------|----------|
-| `pingcode__weekly_report` | 生成本周工作报告（含更新工作项、工时明细、汇总） | 无 |
+| `pingcode__weekly_report` | 生成本周工作报告（含更新工作项、工时明细、汇总，支持企业模式） | 无 |
+| `pingcode__list_activities` | 获取工作项/测试用例的变更活动记录（变更历史、状态流转、字段修改） | `principal_type`, `principal_id` |
 
 ### PRD 需求创建
 
