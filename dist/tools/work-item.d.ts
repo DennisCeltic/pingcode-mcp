@@ -22,6 +22,9 @@ export interface CreateWorkItemParams {
     story_points?: number;
     estimated_workload?: number;
     remaining_workload?: number;
+    start_at?: number;
+    end_at?: number;
+    phase_id?: string;
 }
 export interface UpdateWorkItemParams {
     work_item_id: string;
@@ -35,6 +38,9 @@ export interface UpdateWorkItemParams {
     story_points?: number;
     estimated_workload?: number;
     remaining_workload?: number;
+    start_at?: number;
+    end_at?: number;
+    phase_id?: string;
 }
 export declare function listWorkItems(params?: ListWorkItemsParams): Promise<unknown>;
 export declare function getWorkItem(workItemId: string): Promise<unknown>;

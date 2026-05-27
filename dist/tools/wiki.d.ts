@@ -1,3 +1,8 @@
+export interface CreateWikiSpaceParams {
+    name: string;
+    description?: string;
+    visibility?: 'private' | 'public';
+}
 export interface ListWikiSpacesParams {
     page_index?: number;
     page_size?: number;
@@ -11,6 +16,7 @@ export interface GetWikiPageParams {
     page_id: string;
     format_type?: 'markdown' | 'html';
 }
+export declare function createWikiSpace(params: CreateWikiSpaceParams): Promise<unknown>;
 export declare function listWikiSpaces(params?: ListWikiSpacesParams): Promise<unknown>;
 export declare function listWikiPages(params: ListWikiPagesParams): Promise<unknown>;
 export declare function getWikiPage(params: GetWikiPageParams): Promise<unknown>;

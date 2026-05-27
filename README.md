@@ -241,7 +241,7 @@ pingcode-mcp configure
 pingcode-mcp status
 ```
 
-## 可用 Tools（共 29 个）
+## 可用 Tools（共 30 个）
 
 ### 系统管理
 
@@ -338,6 +338,12 @@ pingcode-mcp status
 | Tool | 描述 | 必填参数 |
 |------|------|----------|
 | `pingcode__create_from_prd` | 根据 PRD 文档自动创建需求层级（父需求 + 子需求拆解），LLM 分析 PRD 后调用本工具批量创建 | `project_id`, `title` |
+
+### WBS 分解创建
+
+| Tool | 描述 | 必填参数 |
+|------|------|----------|
+| `pingcode__create_from_wbs` | 根据项目计划在瀑布/混合项目中自动创建 WBS 分解结构（阶段→里程碑→任务），LLM 分析计划后调用本工具批量创建。任务通过 phase_id 关联到阶段。仅支持 waterfall/hybrid 项目。 | `project_id`, `stages` |
 
 ### 筛选参数速查
 
@@ -477,6 +483,41 @@ AI: [调用 pingcode__create_from_prd, {
 }]
 ```
 
+### WBS 分解创建
+```
+用户: 阅读项目管理计划书，给我创建一个瀑布项目 AS-MB，做好 WBS 分解
+AI: [分析项目管理计划书，提取阶段、里程碑、任务和时间信息]
+    [调用 pingcode__create_project, { name: "AS-MB", identifier: "AS-MB", type_id: "waterfall" }]
+    [调用 pingcode__create_from_wbs, {
+      project_id: "6a16c401...",
+      assignee_id: "小冯的ID",
+      stages: [
+        {
+          title: "Kick Off - 项目启动",
+          start_at: 1699228800, end_at: 1706140800,
+          description: "项目定点阶段...",
+          milestones: [
+            { title: "里程碑: Kick Off 评审通过", end_at: 1706140800,
+              tasks: [
+                { title: "可行性分析报告编制", start_at: 1699228800, end_at: 1701820800 }
+              ]
+            }
+          ],
+          tasks: [
+            { title: "项目规划与立项", start_at: 1701820800, end_at: 1704844800 },
+            { title: "台架资源对接与确认", start_at: 1701820800, end_at: 1706140800 }
+          ]
+        },
+        ...
+      ]
+    }]
+
+→ 创建成功，输出层级结构：
+  - 阶段 (6个): Kick Off, Feature Complete, Customer Ready, PT1, QMT, SOP
+  - 里程碑 (6个): 各阶段里程碑评审节点
+  - 任务 (17个): 各阶段具体执行任务
+```
+
 ### 成员查询
 ```
 用户: 帮我找一个叫"张三"的同事
@@ -581,7 +622,10 @@ pingcode-mcp/
 │   │   ├── release.ts     # 发布管理
 │   │   ├── wiki.ts        # Wiki 知识管理
 │   │   ├── attachment.ts  # 附件管理
-│   │   └── report.ts      # 周报生成
+│   │   ├── report.ts      # 周报生成
+│   │   ├── prd.ts         # PRD 需求创建
+│   │   ├── wbs.ts         # WBS 分解创建
+│   │   └── activity.ts    # 活动记录
 │   ├── utils/
 │   │   ├── prompts.ts     # 交互式提示
 │   │   ├── http.ts        # HTTP 工具

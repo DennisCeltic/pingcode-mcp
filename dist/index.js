@@ -16,6 +16,7 @@ import { listWikiSpaces, listWikiPages, getWikiPage, addWikiMembers, } from './t
 import { listAttachments, getAttachment, } from './tools/attachment.js';
 import { generateWeeklyReport } from './tools/report.js';
 import { createFromPrd } from './tools/prd.js';
+import { createFromWbs } from './tools/wbs.js';
 import { listActivities } from './tools/activity.js';
 import { logWarn, logInfo, logError } from './utils/logger.js';
 import { validateArgs } from './utils/validation.js';
@@ -91,7 +92,7 @@ const TOOLS = [
             properties: {
                 name: { type: 'string', description: '项目名称' },
                 identifier: { type: 'string', description: '项目标识（全局唯一），如 PC-MCP' },
-                type_id: { type: 'string', description: '项目类型: scrum 或 kanban', enum: ['scrum', 'kanban'] },
+                type_id: { type: 'string', description: '项目类型: scrum(敏捷)、kanban(看板)、waterfall(瀑布)、hybrid(混合)', enum: ['scrum', 'kanban', 'waterfall', 'hybrid'] },
                 description: { type: 'string', description: '项目描述' },
                 assignee_id: { type: 'string', description: '项目负责人的用户ID' },
             },
@@ -199,6 +200,9 @@ const TOOLS = [
                 story_points: { type: 'number', description: '故事点（仅Scrum/Kanban项目的story和bug有效）' },
                 estimated_workload: { type: 'number', description: '预估工时' },
                 remaining_workload: { type: 'number', description: '剩余工时' },
+                start_at: { type: 'number', description: '开始时间（十位时间戳）' },
+                end_at: { type: 'number', description: '结束时间（十位时间戳）' },
+                phase_id: { type: 'string', description: '所属计划ID（阶段或里程碑的ID，用于将任务关联到阶段/里程碑。仅瀑布/混合项目有效）' },
             },
             required: ['project_id', 'type_id', 'title'],
         },
@@ -220,6 +224,9 @@ const TOOLS = [
                 story_points: { type: 'number', description: '故事点' },
                 estimated_workload: { type: 'number', description: '预估工时' },
                 remaining_workload: { type: 'number', description: '剩余工时' },
+                start_at: { type: 'number', description: '开始时间（十位时间戳）' },
+                end_at: { type: 'number', description: '结束时间（十位时间戳）' },
+                phase_id: { type: 'string', description: '所属计划ID（阶段或里程碑的ID，用于将任务关联到阶段/里程碑）' },
             },
             required: ['work_item_id'],
         },
@@ -491,6 +498,78 @@ const TOOLS = [
         },
     },
     {
+        name: 'pingcode__create_from_wbs',
+        description: '根据项目计划在 PingCode 瀑布/混合项目中创建 WBS 分解结构。' +
+            'LLM 应先分析项目计划，将其拆解为阶段→里程碑→任务的层级结构，然后调用本工具批量创建。' +
+            '仅支持 waterfall/hybrid 类型项目。阶段类型为"阶段"，里程碑类型为"里程碑"，任务类型为"任务"。' +
+            '任务通过 phase_id 关联到所属阶段，里程碑通过 parent_id 关联到阶段。',
+        inputSchema: {
+            type: 'object',
+            properties: {
+                project_id: { type: 'string', description: '项目ID（必填，需为 waterfall 或 hybrid 类型）' },
+                assignee_id: { type: 'string', description: '默认负责人ID，所有工作项将分配到此负责人' },
+                stages: {
+                    type: 'array',
+                    description: '阶段列表。LLM 应将项目计划拆解为多个阶段，每个阶段可包含里程碑和任务。',
+                    items: {
+                        type: 'object',
+                        properties: {
+                            title: { type: 'string', description: '阶段标题' },
+                            description: { type: 'string', description: '阶段描述' },
+                            start_at: { type: 'number', description: '开始时间（十位时间戳）' },
+                            end_at: { type: 'number', description: '结束时间（十位时间戳）' },
+                            milestones: {
+                                type: 'array',
+                                description: '里程碑列表，里程碑仅有截止时间',
+                                items: {
+                                    type: 'object',
+                                    properties: {
+                                        title: { type: 'string', description: '里程碑标题' },
+                                        description: { type: 'string', description: '里程碑描述' },
+                                        end_at: { type: 'number', description: '截止时间（十位时间戳）' },
+                                        tasks: {
+                                            type: 'array',
+                                            description: '里程碑下的任务列表',
+                                            items: {
+                                                type: 'object',
+                                                properties: {
+                                                    title: { type: 'string', description: '任务标题' },
+                                                    description: { type: 'string', description: '任务描述' },
+                                                    start_at: { type: 'number', description: '开始时间（十位时间戳）' },
+                                                    end_at: { type: 'number', description: '结束时间（十位时间戳）' },
+                                                    assignee_id: { type: 'string', description: '负责人ID' },
+                                                },
+                                                required: ['title'],
+                                            },
+                                        },
+                                    },
+                                    required: ['title', 'end_at'],
+                                },
+                            },
+                            tasks: {
+                                type: 'array',
+                                description: '阶段下的任务列表（直接属于阶段，非里程碑下）',
+                                items: {
+                                    type: 'object',
+                                    properties: {
+                                        title: { type: 'string', description: '任务标题' },
+                                        description: { type: 'string', description: '任务描述' },
+                                        start_at: { type: 'number', description: '开始时间（十位时间戳）' },
+                                        end_at: { type: 'number', description: '结束时间（十位时间戳）' },
+                                        assignee_id: { type: 'string', description: '负责人ID' },
+                                    },
+                                    required: ['title'],
+                                },
+                            },
+                        },
+                        required: ['title', 'start_at', 'end_at'],
+                    },
+                },
+            },
+            required: ['project_id', 'stages'],
+        },
+    },
+    {
         name: 'pingcode__list_activities',
         description: '获取指定工作项/测试用例/测试执行/需求/ticket 的活动记录（变更历史）。' +
             '可查询状态变更、字段修改、评论等活动详情。适用于周报摘要、审计追溯等场景。',
@@ -743,6 +822,9 @@ async function handleToolCall(request) {
                     story_points: args?.story_points,
                     estimated_workload: args?.estimated_workload,
                     remaining_workload: args?.remaining_workload,
+                    start_at: args?.start_at,
+                    end_at: args?.end_at,
+                    phase_id: args?.phase_id,
                 });
                 return {
                     content: [
@@ -766,6 +848,9 @@ async function handleToolCall(request) {
                     story_points: args?.story_points,
                     estimated_workload: args?.estimated_workload,
                     remaining_workload: args?.remaining_workload,
+                    start_at: args?.start_at,
+                    end_at: args?.end_at,
+                    phase_id: args?.phase_id,
                 });
                 return {
                     content: [
@@ -1036,6 +1121,21 @@ async function handleToolCall(request) {
                     story_points: args?.story_points,
                     estimated_workload: args?.estimated_workload,
                     children: args?.children,
+                });
+                return {
+                    content: [
+                        {
+                            type: 'text',
+                            text: data,
+                        },
+                    ],
+                };
+            }
+            case 'pingcode__create_from_wbs': {
+                const data = await createFromWbs({
+                    project_id: String(args?.project_id),
+                    assignee_id: args?.assignee_id,
+                    stages: (args?.stages ?? []),
                 });
                 return {
                     content: [

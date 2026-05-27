@@ -1,4 +1,11 @@
 import { pingCodeClient } from '../client/index.js';
+export async function createWikiSpace(params) {
+    return pingCodeClient.post('/v1/wiki/spaces', {
+        name: params.name,
+        description: params.description ?? '',
+        visibility: params.visibility ?? 'private',
+    });
+}
 export async function listWikiSpaces(params = {}) {
     const query = new URLSearchParams();
     query.append('page_index', String(params.page_index ?? 0));

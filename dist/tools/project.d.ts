@@ -6,7 +6,7 @@ export interface ListProjectsParams {
 export interface CreateProjectParams {
     name: string;
     identifier: string;
-    type?: 'scrum' | 'kanban';
+    type?: 'scrum' | 'kanban' | 'waterfall' | 'hybrid';
     visibility?: 'private' | 'public';
     description?: string;
     assignee_id?: string;

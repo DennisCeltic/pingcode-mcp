@@ -1,5 +1,11 @@
 import { pingCodeClient } from '../client/index.js';
 
+export interface CreateWikiSpaceParams {
+  name: string;
+  description?: string;
+  visibility?: 'private' | 'public';
+}
+
 export interface ListWikiSpacesParams {
   page_index?: number;
   page_size?: number;
@@ -14,6 +20,14 @@ export interface ListWikiPagesParams {
 export interface GetWikiPageParams {
   page_id: string;
   format_type?: 'markdown' | 'html';
+}
+
+export async function createWikiSpace(params: CreateWikiSpaceParams) {
+  return pingCodeClient.post('/v1/wiki/spaces', {
+    name: params.name,
+    description: params.description ?? '',
+    visibility: params.visibility ?? 'private',
+  });
 }
 
 export async function listWikiSpaces(params: ListWikiSpacesParams = {}) {
