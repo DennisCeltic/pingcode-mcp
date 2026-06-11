@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="stage5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#DC2626" />
+    </linearGradient>
+    <filter id="cardSh">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="0" dy="1" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.05" />
+      <feComposite operator="in" in2="SourceAlpha" />
+      <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)" />
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B">阶段5: 跟踪验收</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">6月30日 — 12月31日  ·  系统持续优化与正式验收</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P06</text>
+
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M72,120 H748 A12,12 0 0 1 760,132 V668 A12,12 0 0 1 748,680 H72 A12,12 0 0 1 60,668 V132 A12,12 0 0 1 72,120 Z" />
+  <path fill="#EF4444" d="M62,120 H758 A2,2 0 0 1 760,122 V123 A2,2 0 0 1 758,125 H62 A2,2 0 0 1 60,123 V122 A2,2 0 0 1 62,120 Z" />
+
+  <text x="100" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#1E293B">系统使用问题收集与持续优化</text>
+
+  
+  <g>
+    <path fill="#FEF2F2" d="M108,200 H272 A8,8 0 0 1 280,208 V272 A8,8 0 0 1 272,280 H108 A8,8 0 0 1 100,272 V208 A8,8 0 0 1 108,200 Z" />
+    <text x="190" y="235" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#DC2626" text-anchor="middle">问题收集</text>
+    <text x="190" y="260" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">所有使用人员反馈</text>
+
+    <polygon points="290,240 320,240 320,230 350,248 320,266 320,256 290,256" fill="#FCA5A5" />
+
+    <path fill="#FEF2F2" d="M368,200 H532 A8,8 0 0 1 540,208 V272 A8,8 0 0 1 532,280 H368 A8,8 0 0 1 360,272 V208 A8,8 0 0 1 368,200 Z" />
+    <text x="450" y="235" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#DC2626" text-anchor="middle">问题跟踪</text>
+    <text x="450" y="260" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">整理分类 · 跟进进度</text>
+
+    <polygon points="550,240 580,240 580,230 610,248 580,266 580,256 550,256" fill="#FCA5A5" />
+
+    <path fill="#ECFDF5" d="M108,310 H272 A8,8 0 0 1 280,318 V382 A8,8 0 0 1 272,390 H108 A8,8 0 0 1 100,382 V318 A8,8 0 0 1 108,310 Z" />
+    <text x="190" y="345" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#10B981" text-anchor="middle">优化实施</text>
+    <text x="190" y="370" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">乙方持续优化系统</text>
+
+    <polygon points="290,350 320,350 320,340 350,358 320,376 320,366 290,366" fill="#6EE7B7" />
+
+    <path fill="#ECFDF5" d="M368,310 H532 A8,8 0 0 1 540,318 V382 A8,8 0 0 1 532,390 H368 A8,8 0 0 1 360,382 V318 A8,8 0 0 1 368,310 Z" />
+    <text x="450" y="345" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#10B981" text-anchor="middle">效果验证</text>
+    <text x="450" y="370" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">确认优化达到预期</text>
+  </g>
+
+  <rect x="100" y="425" width="620" height="1" fill="#E2E8F0" />
+
+  <text x="100" y="470" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">关键角色</text>
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">
+    <circle cx="115" cy="498" r="4" fill="#EF4444" />
+    <text x="130" y="503">需求发起人: 发起使用需求，参与验收</text>
+    <circle cx="115" cy="525" r="4" fill="#F59E0B" />
+    <text x="130" y="530">IT: 系统维护与技术支持</text>
+    <circle cx="115" cy="552" r="4" fill="#10B981" />
+    <text x="130" y="557">系统管理员: 日常管理与配置维护</text>
+    <circle cx="115" cy="579" r="4" fill="#2563EB" />
+    <text x="130" y="584">所有使用人员: 反馈使用问题与建议</text>
+  </g>
+
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M792,120 H1208 A12,12 0 0 1 1220,132 V668 A12,12 0 0 1 1208,680 H792 A12,12 0 0 1 780,668 V132 A12,12 0 0 1 792,120 Z" />
+  <path fill="#10B981" d="M782,120 H1218 A2,2 0 0 1 1220,122 V123 A2,2 0 0 1 1218,125 H782 A2,2 0 0 1 780,123 V122 A2,2 0 0 1 782,120 Z" />
+
+  <text x="820" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#1E293B">项目交付验收</text>
+  <text x="820" y="198" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">时间: 待定</text>
+
+  <path fill="#F8FAFC" d="M818,220 H1182 A8,8 0 0 1 1190,228 V272 A8,8 0 0 1 1182,280 H818 A8,8 0 0 1 810,272 V228 A8,8 0 0 1 818,220 Z" />
+  <text x="835" y="245" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#10B981">✓</text>
+  <text x="855" y="246" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">系统功能验收</text>
+  <text x="855" y="266" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">确认部署功能模块完全满足合同要求</text>
+
+  <path fill="#F8FAFC" d="M818,295 H1182 A8,8 0 0 1 1190,303 V347 A8,8 0 0 1 1182,355 H818 A8,8 0 0 1 810,347 V303 A8,8 0 0 1 818,295 Z" />
+  <text x="835" y="320" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#10B981">✓</text>
+  <text x="855" y="321" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">流程落地验证</text>
+  <text x="855" y="341" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">确认各业务部门流程在系统中正常运转</text>
+
+  <path fill="#F8FAFC" d="M818,370 H1182 A8,8 0 0 1 1190,378 V422 A8,8 0 0 1 1182,430 H818 A8,8 0 0 1 810,422 V378 A8,8 0 0 1 818,370 Z" />
+  <text x="835" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#10B981">✓</text>
+  <text x="855" y="396" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">培训完成确认</text>
+  <text x="855" y="416" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">管理员和用户培训记录完整</text>
+
+  <path fill="#F8FAFC" d="M818,445 H1182 A8,8 0 0 1 1190,453 V497 A8,8 0 0 1 1182,505 H818 A8,8 0 0 1 810,497 V453 A8,8 0 0 1 818,445 Z" />
+  <text x="835" y="470" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#10B981">✓</text>
+  <text x="855" y="471" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">文档交付确认</text>
+  <text x="855" y="491" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">用户手册、使用规范、权限表完整交付</text>
+
+  <path fill="#FEF9E7" d="M818,520 H1182 A8,8 0 0 1 1190,528 V572 A8,8 0 0 1 1182,580 H818 A8,8 0 0 1 810,572 V528 A8,8 0 0 1 818,520 Z" />
+  <text x="835" y="545" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#F59E0B">○</text>
+  <text x="855" y="546" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">签署服务验收单</text>
+  <text x="855" y="566" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">需求发起人 + IT 共同确认签署</text>
+
+  
+  <path fill="#D1FAE5" stroke="#10B981" stroke-width="1" d="M820,600 H1180 A10,10 0 0 1 1190,610 V650 A10,10 0 0 1 1180,660 H820 A10,10 0 0 1 810,650 V610 A10,10 0 0 1 820,600 Z" />
+  <text x="1000" y="628" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="800" fill="#059669" text-anchor="middle">🔷 里程碑: 项目验收通过</text>
+  <text x="1000" y="650" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B" text-anchor="middle">目标: 2026年12月31日</text>
+</svg>

@@ -241,7 +241,7 @@ pingcode-mcp configure
 pingcode-mcp status
 ```
 
-## 可用 Tools（共 30 个）
+## 可用 Tools（共 31 个）
 
 ### 系统管理
 
@@ -344,6 +344,12 @@ pingcode-mcp status
 | Tool | 描述 | 必填参数 |
 |------|------|----------|
 | `pingcode__create_from_wbs` | 根据项目计划在瀑布/混合项目中自动创建 WBS 分解结构（阶段→里程碑→任务），LLM 分析计划后调用本工具批量创建。任务通过 phase_id 关联到阶段。仅支持 waterfall/hybrid 项目。 | `project_id`, `stages` |
+
+### PPTX 导出
+
+| Tool | 描述 | 必填参数 |
+|------|------|----------|
+| `pingcode__export_pptx` | 将一组 SVG 页面导出为可编辑的 PPTX 文件。输入 SVG 内容和项目名称，生成 PowerPoint 可直接打开的 .pptx。需要安装 ppt-master skill 依赖。 | `project_name`, `pages` |
 
 ### 筛选参数速查
 
@@ -625,7 +631,8 @@ pingcode-mcp/
 │   │   ├── report.ts      # 周报生成
 │   │   ├── prd.ts         # PRD 需求创建
 │   │   ├── wbs.ts         # WBS 分解创建
-│   │   └── activity.ts    # 活动记录
+│   │   ├── activity.ts    # 活动记录
+│   │   └── ppt.ts         # PPTX 导出
 │   ├── utils/
 │   │   ├── prompts.ts     # 交互式提示
 │   │   ├── http.ts        # HTTP 工具

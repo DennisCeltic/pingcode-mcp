@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="cardSh">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="0" dy="1" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.05" />
+      <feComposite operator="in" in2="SourceAlpha" />
+      <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)" />
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B" letter-spacing="1">阶段1: 项目准备与系统部署</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">2026年5月21日 — 6月12日 · 9个关键任务</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P04</text>
+
+  
+  <path fill="#E2E8F0" d="M62,105 H1218 A2,2 0 0 1 1220,107 V107 A2,2 0 0 1 1218,109 H62 A2,2 0 0 1 60,107 V107 A2,2 0 0 1 62,105 Z" />
+  <path fill="#2563EB" opacity="0.4" d="M62,105 H1218 A2,2 0 0 1 1220,107 V107 A2,2 0 0 1 1218,109 H62 A2,2 0 0 1 60,107 V107 A2,2 0 0 1 62,105 Z" />
+
+  
+  <g filter="url(#cardSh)">
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M70,130 H420 A10,10 0 0 1 430,140 V280 A10,10 0 0 1 420,290 H70 A10,10 0 0 1 60,280 V140 A10,10 0 0 1 70,130 Z" />
+    <path fill="#2563EB" d="M62,130 H428 A2,2 0 0 1 430,132 V133 A2,2 0 0 1 428,135 H62 A2,2 0 0 1 60,133 V132 A2,2 0 0 1 62,130 Z" />
+    <text x="80" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563EB">05/21</text>
+    <text x="80" y="195" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">合同签订</text>
+    <text x="80" y="220" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">完成商务合同签署</text>
+    <path fill="#EBF0FD" d="M84,240 H136 A4,4 0 0 1 140,244 V258 A4,4 0 0 1 136,262 H84 A4,4 0 0 1 80,258 V244 A4,4 0 0 1 84,240 Z" />
+    <text x="110" y="256" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#2563EB" text-anchor="middle">乙方</text>
+
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M460,130 H810 A10,10 0 0 1 820,140 V280 A10,10 0 0 1 810,290 H460 A10,10 0 0 1 450,280 V140 A10,10 0 0 1 460,130 Z" />
+    <path fill="#2563EB" d="M452,130 H818 A2,2 0 0 1 820,132 V133 A2,2 0 0 1 818,135 H452 A2,2 0 0 1 450,133 V132 A2,2 0 0 1 452,130 Z" />
+    <text x="470" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563EB">05/21 — 05/22</text>
+    <text x="470" y="195" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">组建项目团队</text>
+    <text x="470" y="220" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">甲乙双方确认项目成员及职责</text>
+    <path fill="#EBF0FD" d="M474,240 H526 A4,4 0 0 1 530,244 V258 A4,4 0 0 1 526,262 H474 A4,4 0 0 1 470,258 V244 A4,4 0 0 1 474,240 Z" />
+    <text x="500" y="256" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#2563EB" text-anchor="middle">乙方</text>
+
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M850,130 H1210 A10,10 0 0 1 1220,140 V280 A10,10 0 0 1 1210,290 H850 A10,10 0 0 1 840,280 V140 A10,10 0 0 1 850,130 Z" />
+    <path fill="#2563EB" d="M842,130 H1218 A2,2 0 0 1 1220,132 V133 A2,2 0 0 1 1218,135 H842 A2,2 0 0 1 840,133 V132 A2,2 0 0 1 842,130 Z" />
+    <text x="860" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563EB">05/22 — 05/25</text>
+    <text x="860" y="195" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">梳理核心业务场景</text>
+    <text x="860" y="220" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">梳理业务流程与现有工作流程</text>
+    <path fill="#EBF0FD" d="M864,240 H916 A4,4 0 0 1 920,244 V258 A4,4 0 0 1 916,262 H864 A4,4 0 0 1 860,258 V244 A4,4 0 0 1 864,240 Z" />
+    <text x="890" y="256" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#2563EB" text-anchor="middle">乙方</text>
+  </g>
+
+  
+  <g filter="url(#cardSh)">
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M70,310 H420 A10,10 0 0 1 430,320 V460 A10,10 0 0 1 420,470 H70 A10,10 0 0 1 60,460 V320 A10,10 0 0 1 70,310 Z" />
+    <path fill="#F59E0B" d="M62,310 H428 A2,2 0 0 1 430,312 V313 A2,2 0 0 1 428,315 H62 A2,2 0 0 1 60,313 V312 A2,2 0 0 1 62,310 Z" />
+    <text x="80" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#F59E0B">05/25 — 05/26</text>
+    <text x="80" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">系统部署</text>
+    <text x="80" y="400" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">部署对应功能模块</text>
+    <path fill="#FEF3C7" d="M84,420 H136 A4,4 0 0 1 140,424 V438 A4,4 0 0 1 136,442 H84 A4,4 0 0 1 80,438 V424 A4,4 0 0 1 84,420 Z" />
+    <text x="110" y="436" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#F59E0B" text-anchor="middle">甲方IT</text>
+
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M460,310 H810 A10,10 0 0 1 820,320 V460 A10,10 0 0 1 810,470 H460 A10,10 0 0 1 450,460 V320 A10,10 0 0 1 460,310 Z" />
+    <path fill="#F59E0B" d="M452,310 H818 A2,2 0 0 1 820,312 V313 A2,2 0 0 1 818,315 H452 A2,2 0 0 1 450,313 V312 A2,2 0 0 1 452,310 Z" />
+    <text x="470" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#F59E0B">05/26 — 05/28</text>
+    <text x="470" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">需求调研</text>
+    <text x="470" y="400" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">了解使用需求与期望 · 交付: 调研文档</text>
+    <path fill="#EBF0FD" d="M474,420 H526 A4,4 0 0 1 530,424 V438 A4,4 0 0 1 526,442 H474 A4,4 0 0 1 470,438 V424 A4,4 0 0 1 474,420 Z" />
+    <text x="500" y="436" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#2563EB" text-anchor="middle">乙方</text>
+
+    <path fill="#FFFFFF" stroke="#7C3AED" stroke-width="2" d="M850,310 H1210 A10,10 0 0 1 1220,320 V460 A10,10 0 0 1 1210,470 H850 A10,10 0 0 1 840,460 V320 A10,10 0 0 1 850,310 Z" />
+    <path fill="#7C3AED" d="M842,310 H1218 A2,2 0 0 1 1220,312 V313 A2,2 0 0 1 1218,315 H842 A2,2 0 0 1 840,313 V312 A2,2 0 0 1 842,310 Z" />
+    <text x="860" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#7C3AED">05/29</text>
+    <text x="860" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">项目启动会 🔷 里程碑</text>
+    <text x="860" y="400" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">确认项目目标、范围、计划</text>
+    <path fill="#EDE9FE" d="M864,420 H916 A4,4 0 0 1 920,424 V438 A4,4 0 0 1 916,442 H864 A4,4 0 0 1 860,438 V424 A4,4 0 0 1 864,420 Z" />
+    <text x="890" y="436" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#7C3AED" text-anchor="middle">双方</text>
+  </g>
+
+  
+  <g filter="url(#cardSh)">
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M70,490 H420 A10,10 0 0 1 430,500 V620 A10,10 0 0 1 420,630 H70 A10,10 0 0 1 60,620 V500 A10,10 0 0 1 70,490 Z" />
+    <path fill="#10B981" d="M62,490 H428 A2,2 0 0 1 430,492 V493 A2,2 0 0 1 428,495 H62 A2,2 0 0 1 60,493 V492 A2,2 0 0 1 62,490 Z" />
+    <text x="80" y="525" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#10B981">05/29 — 06/02</text>
+    <text x="80" y="548" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">系统方案输出</text>
+    <text x="80" y="570" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">根据调研输出系统方案 · 交付: 方案文档</text>
+
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M460,490 H810 A10,10 0 0 1 820,500 V620 A10,10 0 0 1 810,630 H460 A10,10 0 0 1 450,620 V500 A10,10 0 0 1 460,490 Z" />
+    <path fill="#10B981" d="M452,490 H818 A2,2 0 0 1 820,492 V493 A2,2 0 0 1 818,495 H452 A2,2 0 0 1 450,493 V492 A2,2 0 0 1 452,490 Z" />
+    <text x="470" y="525" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#10B981">06/01 — 06/05</text>
+    <text x="470" y="548" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">系统权限收集</text>
+    <text x="470" y="570" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">提供权限模板 · 交付: 权限表</text>
+
+    <path fill="#FFFFFF" stroke="#7C3AED" stroke-width="2" d="M850,490 H1210 A10,10 0 0 1 1220,500 V620 A10,10 0 0 1 1210,630 H850 A10,10 0 0 1 840,620 V500 A10,10 0 0 1 850,490 Z" />
+    <path fill="#7C3AED" d="M842,490 H1218 A2,2 0 0 1 1220,492 V493 A2,2 0 0 1 1218,495 H842 A2,2 0 0 1 840,493 V492 A2,2 0 0 1 842,490 Z" />
+    <text x="860" y="525" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#7C3AED">06/03 — 06/12 🔷 里程碑</text>
+    <text x="860" y="548" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">系统初始配置</text>
+    <text x="860" y="570" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">字段模版/报表/自动化/权限/成员</text>
+  </g>
+
+  <rect x="60" y="660" width="1160" height="1" fill="#E2E8F0" />
+  <text x="60" y="695" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">阶段目标: 项目定点  |  输出物: 可行性分析报告、立项报告、系统方案、权限表</text>
+</svg>

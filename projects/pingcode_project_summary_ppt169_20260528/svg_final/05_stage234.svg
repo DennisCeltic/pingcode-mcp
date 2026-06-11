@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="cardSh">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="0" dy="1" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.05" />
+      <feComposite operator="in" in2="SourceAlpha" />
+      <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)" />
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B">系统试点 → 上线 → 通知</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">阶段2-4  ·  2026年6月15日 — 6月30日</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P05</text>
+
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M72,110 H428 A12,12 0 0 1 440,122 V668 A12,12 0 0 1 428,680 H72 A12,12 0 0 1 60,668 V122 A12,12 0 0 1 72,110 Z" />
+  <path fill="#10B981" d="M62,110 H438 A2,2 0 0 1 440,112 V113 A2,2 0 0 1 438,115 H62 A2,2 0 0 1 60,113 V112 A2,2 0 0 1 62,110 Z" />
+  <text x="90" y="145" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="700" fill="#1E293B">阶段2: 系统试点</text>
+  <text x="90" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#10B981" font-weight="600">6/15 — 6/26</text>
+
+  <rect x="80" y="190" width="340" height="1" fill="#E2E8F0" />
+
+  
+  <path fill="#F8FAFC" d="M88,205 H412 A8,8 0 0 1 420,213 V282 A8,8 0 0 1 412,290 H88 A8,8 0 0 1 80,282 V213 A8,8 0 0 1 88,205 Z" />
+  <circle cx="100" cy="238" r="4" fill="#10B981" />
+  <text x="115" y="233" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">系统试点培训</text>
+  <text x="115" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">讲解基础功能 · 6/15 · 0.5天</text>
+  <text x="115" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">关键用户参与</text>
+
+  
+  <path fill="#F8FAFC" d="M88,300 H412 A8,8 0 0 1 420,308 V377 A8,8 0 0 1 412,385 H88 A8,8 0 0 1 80,377 V308 A8,8 0 0 1 88,300 Z" />
+  <circle cx="100" cy="333" r="4" fill="#10B981" />
+  <text x="115" y="328" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">提供使用手册</text>
+  <text x="115" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">标准功能用户手册 · 远程</text>
+  <text x="115" y="370" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">交付: 用户手册</text>
+
+  
+  <path fill="#F8FAFC" d="M88,395 H412 A8,8 0 0 1 420,403 V472 A8,8 0 0 1 412,480 H88 A8,8 0 0 1 80,472 V403 A8,8 0 0 1 88,395 Z" />
+  <circle cx="100" cy="428" r="4" fill="#10B981" />
+  <text x="115" y="423" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">系统试运行</text>
+  <text x="115" y="445" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">协助各业务部门试点验证</text>
+  <text x="115" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">工时: 10天 · 可自由决定</text>
+
+  
+  <path fill="#F8FAFC" d="M88,490 H412 A8,8 0 0 1 420,498 V567 A8,8 0 0 1 412,575 H88 A8,8 0 0 1 80,567 V498 A8,8 0 0 1 88,490 Z" />
+  <circle cx="100" cy="523" r="4" fill="#10B981" />
+  <text x="115" y="518" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">答疑与配置优化</text>
+  <text x="115" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">根据反馈持续优化配置</text>
+  <text x="115" y="560" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">跟随试运行同步</text>
+
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M462,110 H818 A12,12 0 0 1 830,122 V668 A12,12 0 0 1 818,680 H462 A12,12 0 0 1 450,668 V122 A12,12 0 0 1 462,110 Z" />
+  <path fill="#7C3AED" d="M452,110 H828 A2,2 0 0 1 830,112 V113 A2,2 0 0 1 828,115 H452 A2,2 0 0 1 450,113 V112 A2,2 0 0 1 452,110 Z" />
+  <text x="480" y="145" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="700" fill="#1E293B">阶段3: 系统上线</text>
+  <text x="480" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#7C3AED" font-weight="600">6/22 — 6/29</text>
+
+  <rect x="470" y="190" width="340" height="1" fill="#E2E8F0" />
+
+  <path fill="#F8FAFC" d="M478,205 H802 A8,8 0 0 1 810,213 V292 A8,8 0 0 1 802,300 H478 A8,8 0 0 1 470,292 V213 A8,8 0 0 1 478,205 Z" />
+  <circle cx="490" cy="238" r="4" fill="#7C3AED" />
+  <text x="505" y="233" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">优化使用手册</text>
+  <text x="505" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">按内部流程编写系统使用规范</text>
+  <text x="505" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">6/22 — 6/26</text>
+  <text x="505" y="293" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">交付: 使用规范</text>
+
+  <path fill="#F8FAFC" d="M478,312 H802 A8,8 0 0 1 810,320 V399 A8,8 0 0 1 802,407 H478 A8,8 0 0 1 470,399 V320 A8,8 0 0 1 478,312 Z" />
+  <circle cx="490" cy="345" r="4" fill="#7C3AED" />
+  <text x="505" y="340" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">系统管理员培训</text>
+  <text x="505" y="362" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">培训系统管理员 · 6/29 · 0.5天</text>
+  <text x="505" y="380" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">所有管理员参加</text>
+  <text x="505" y="398" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">交付: 签到表 + 录屏</text>
+
+  <path fill="#F8FAFC" d="M478,420 H802 A8,8 0 0 1 810,428 V507 A8,8 0 0 1 802,515 H478 A8,8 0 0 1 470,507 V428 A8,8 0 0 1 478,420 Z" />
+  <circle cx="490" cy="453" r="4" fill="#7C3AED" />
+  <text x="505" y="448" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">系统操作培训</text>
+  <text x="505" y="470" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">培训所有系统使用人员 · 6/29 · 0.5天</text>
+  <text x="505" y="488" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">后续可根据情况安排针对性培训</text>
+  <text x="505" y="506" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">交付: 签到表 + 录屏</text>
+
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M852,110 H1208 A12,12 0 0 1 1220,122 V668 A12,12 0 0 1 1208,680 H852 A12,12 0 0 1 840,668 V122 A12,12 0 0 1 852,110 Z" />
+  <path fill="#F59E0B" d="M842,110 H1218 A2,2 0 0 1 1220,112 V113 A2,2 0 0 1 1218,115 H842 A2,2 0 0 1 840,113 V112 A2,2 0 0 1 842,110 Z" />
+  <text x="870" y="145" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="700" fill="#1E293B">阶段4: 上线通知</text>
+  <text x="870" y="170" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#F59E0B" font-weight="600">6月30日</text>
+
+  <rect x="860" y="190" width="340" height="1" fill="#E2E8F0" />
+
+  <path fill="#F8FAFC" d="M868,205 H1192 A8,8 0 0 1 1200,213 V282 A8,8 0 0 1 1192,290 H868 A8,8 0 0 1 860,282 V213 A8,8 0 0 1 868,205 Z" />
+  <circle cx="880" cy="238" r="4" fill="#F59E0B" />
+  <text x="895" y="233" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">业务通知</text>
+  <text x="895" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">通知团队系统切换时间及影响</text>
+  <text x="895" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">甲方主导通知</text>
+
+  
+  <path fill="#FEF9E7" stroke="#F59E0B" stroke-width="1" d="M870,320 H1190 A10,10 0 0 1 1200,330 V430 A10,10 0 0 1 1190,440 H870 A10,10 0 0 1 860,430 V330 A10,10 0 0 1 870,320 Z" />
+  <text x="1030" y="355" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" font-weight="700" fill="#F59E0B" text-anchor="middle">🔷 里程碑</text>
+  <text x="1030" y="385" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="800" fill="#1E293B" text-anchor="middle">系统正式上线</text>
+  <text x="1030" y="412" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">2026年6月30日</text>
+  <text x="1030" y="432" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">PingCode正式投入使用</text>
+
+  
+  <rect x="450" y="558" width="390" height="2" fill="#E2E8F0" />
+  <polygon points="840,550 860,559 840,568" fill="#E2E8F0" />
+
+  <rect x="60" y="695" width="1160" height="1" fill="#E2E8F0" />
+  <text x="60" y="712" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">阶段目标: 系统试点验证 → 培训完成 → 正式上线通知</text>
+</svg>

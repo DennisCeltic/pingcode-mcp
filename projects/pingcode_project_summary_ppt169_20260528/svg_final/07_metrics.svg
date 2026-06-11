@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" />
+      <feOffset dx="0" dy="3" />
+      <feFlood flood-color="#0F172A" flood-opacity="0.06" />
+      <feComposite operator="in" in2="SourceAlpha" />
+      <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)" />
+
+  <text x="60" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B" letter-spacing="1">项目成果与关键指标</text>
+  <text x="60" y="85" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">PingCode系统实施 · 全生命周期数据</text>
+  <text x="1220" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P07</text>
+
+  
+  <g filter="url(#cardShadow)">
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M72,120 H408 A12,12 0 0 1 420,132 V288 A12,12 0 0 1 408,300 H72 A12,12 0 0 1 60,288 V132 A12,12 0 0 1 72,120 Z" />
+    <path fill="#2563EB" d="M78.50,140 H78.50 A2.50,3 0 0 1 81,143 V197 A2.50,3 0 0 1 78.50,200 H78.50 A2.50,3 0 0 1 76,197 V143 A2.50,3 0 0 1 78.50,140 Z" />
+    <text x="100" y="165" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">总任务数</text>
+    <text x="100" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">WBS 工作项总数</text>
+    <text x="100" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#1E293B" letter-spacing="-1">19</text>
+    <circle cx="115" cy="280" r="14" fill="#ECFDF5" />
+    <text x="115" y="285" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#10B981" text-anchor="middle">ALL</text>
+    <text x="140" y="286" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" font-weight="600" fill="#10B981">全部创建完成</text>
+
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M472,120 H808 A12,12 0 0 1 820,132 V288 A12,12 0 0 1 808,300 H472 A12,12 0 0 1 460,288 V132 A12,12 0 0 1 472,120 Z" />
+    <path fill="#7C3AED" d="M478.50,140 H478.50 A2.50,3 0 0 1 481,143 V197 A2.50,3 0 0 1 478.50,200 H478.50 A2.50,3 0 0 1 476,197 V143 A2.50,3 0 0 1 478.50,140 Z" />
+    <text x="500" y="165" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">阶段数</text>
+    <text x="500" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">管理粒度</text>
+    <text x="500" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#1E293B">5</text>
+    <text x="520" y="286" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">阶段覆盖完整</text>
+
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M872,120 H1208 A12,12 0 0 1 1220,132 V288 A12,12 0 0 1 1208,300 H872 A12,12 0 0 1 860,288 V132 A12,12 0 0 1 872,120 Z" />
+    <path fill="#F59E0B" d="M878.50,140 H878.50 A2.50,3 0 0 1 881,143 V197 A2.50,3 0 0 1 878.50,200 H878.50 A2.50,3 0 0 1 876,197 V143 A2.50,3 0 0 1 878.50,140 Z" />
+    <text x="900" y="165" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">里程碑</text>
+    <text x="900" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">关键节点</text>
+    <text x="900" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#1E293B">6</text>
+    <text x="920" y="286" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">节点全部设定</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M72,330 H408 A12,12 0 0 1 420,342 V498 A12,12 0 0 1 408,510 H72 A12,12 0 0 1 60,498 V342 A12,12 0 0 1 72,330 Z" />
+    <path fill="#10B981" d="M78.50,350 H78.50 A2.50,3 0 0 1 81,353 V407 A2.50,3 0 0 1 78.50,410 H78.50 A2.50,3 0 0 1 76,407 V353 A2.50,3 0 0 1 78.50,350 Z" />
+    <text x="100" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">项目周期</text>
+    <text x="100" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">预计持续时长</text>
+    <text x="100" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="40" font-weight="800" fill="#1E293B">~7个月</text>
+    <text x="100" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">2026.05 — 2026.12</text>
+
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M472,330 H808 A12,12 0 0 1 820,342 V498 A12,12 0 0 1 808,510 H472 A12,12 0 0 1 460,498 V342 A12,12 0 0 1 472,330 Z" />
+    <path fill="#EF4444" d="M478.50,350 H478.50 A2.50,3 0 0 1 481,353 V407 A2.50,3 0 0 1 478.50,410 H478.50 A2.50,3 0 0 1 476,407 V353 A2.50,3 0 0 1 478.50,350 Z" />
+    <text x="500" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">系统上线</text>
+    <text x="500" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">里程碑时间</text>
+    <text x="500" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="30" font-weight="800" fill="#1E293B">2026.06.30</text>
+    <text x="500" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">正式切换上线</text>
+
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M872,330 H1208 A12,12 0 0 1 1220,342 V498 A12,12 0 0 1 1208,510 H872 A12,12 0 0 1 860,498 V342 A12,12 0 0 1 872,330 Z" />
+    <path fill="#3B82F6" d="M878.50,350 H878.50 A2.50,3 0 0 1 881,353 V407 A2.50,3 0 0 1 878.50,410 H878.50 A2.50,3 0 0 1 876,407 V353 A2.50,3 0 0 1 878.50,350 Z" />
+    <text x="900" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">管理员</text>
+    <text x="900" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">项目经理</text>
+    <text x="900" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="40" font-weight="800" fill="#1E293B">小冯</text>
+    <text x="900" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">项目管理员</text>
+  </g>
+
+  
+  <text x="60" y="560" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">核心交付物</text>
+
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#475569">
+    <path fill="#EBF0FD" d="M66,580 H284 A6,6 0 0 1 290,586 V614 A6,6 0 0 1 284,620 H66 A6,6 0 0 1 60,614 V586 A6,6 0 0 1 66,580 Z" />
+    <text x="175" y="606" text-anchor="middle">系统方案</text>
+
+    <path fill="#EDE9FE" d="M316,580 H534 A6,6 0 0 1 540,586 V614 A6,6 0 0 1 534,620 H316 A6,6 0 0 1 310,614 V586 A6,6 0 0 1 316,580 Z" />
+    <text x="425" y="606" text-anchor="middle">权限配置表</text>
+
+    <path fill="#D1FAE5" d="M566,580 H784 A6,6 0 0 1 790,586 V614 A6,6 0 0 1 784,620 H566 A6,6 0 0 1 560,614 V586 A6,6 0 0 1 566,580 Z" />
+    <text x="675" y="606" text-anchor="middle">用户手册</text>
+
+    <path fill="#FEF3C7" d="M816,580 H1034 A6,6 0 0 1 1040,586 V614 A6,6 0 0 1 1034,620 H816 A6,6 0 0 1 810,614 V586 A6,6 0 0 1 816,580 Z" />
+    <text x="925" y="606" text-anchor="middle">使用规范</text>
+
+    <path fill="#FEF2F2" d="M66,635 H284 A6,6 0 0 1 290,641 V669 A6,6 0 0 1 284,675 H66 A6,6 0 0 1 60,669 V641 A6,6 0 0 1 66,635 Z" />
+    <text x="175" y="661" text-anchor="middle">培训签到表 ×2</text>
+
+    <path fill="#D1FAE5" d="M316,635 H534 A6,6 0 0 1 540,641 V669 A6,6 0 0 1 534,675 H316 A6,6 0 0 1 310,669 V641 A6,6 0 0 1 316,635 Z" />
+    <text x="425" y="661" text-anchor="middle">服务验收单</text>
+  </g>
+</svg>

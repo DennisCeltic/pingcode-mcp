@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)"/>
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B">里程碑进展</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">12个里程碑 · 9已完成 · 1进行中 · 2未开始 · 完成率 75%</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P03</text>
+
+  <!-- Progress bar -->
+  <rect x="60" y="100" width="1160" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="60" y="100" width="870" height="10" rx="5" fill="#10B981"/>
+  <text x="640" y="98" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">75% 完成 (9/12)</text>
+
+  <!-- Table header -->
+  <rect x="60" y="130" width="1160" height="35" rx="6" fill="#F1F5F9"/>
+  <text x="80" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">里程碑</text>
+  <text x="380" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">名称</text>
+  <text x="720" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">截止日期</text>
+  <text x="950" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">状态</text>
+
+  <!-- Milestone rows -->
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14">
+    <!-- P1 -->
+    <rect x="60" y="175" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="193" r="8" fill="#10B981"/>
+    <text x="85" y="198" font-size="11" fill="#FFFFFF" text-anchor="middle">P1</text>
+    <text x="380" y="199" fill="#1E293B">需求设计阶段</text>
+    <text x="720" y="199" fill="#64748B">-</text>
+    <rect x="950" y="182" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="198" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P2 -->
+    <rect x="60" y="216" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="234" r="8" fill="#10B981"/>
+    <text x="85" y="239" font-size="11" fill="#FFFFFF" text-anchor="middle">P2</text>
+    <text x="380" y="240" fill="#1E293B">ID设计阶段</text>
+    <text x="720" y="240" fill="#64748B">-</text>
+    <rect x="950" y="223" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="239" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P3 -->
+    <rect x="60" y="257" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="275" r="8" fill="#10B981"/>
+    <text x="85" y="280" font-size="11" fill="#FFFFFF" text-anchor="middle">P3</text>
+    <text x="380" y="281" fill="#1E293B">概念设计阶段</text>
+    <text x="720" y="281" fill="#64748B">2026-04-10</text>
+    <rect x="950" y="264" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="280" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P4 -->
+    <rect x="60" y="298" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="316" r="8" fill="#10B981"/>
+    <text x="85" y="321" font-size="11" fill="#FFFFFF" text-anchor="middle">P4</text>
+    <text x="380" y="322" fill="#1E293B">立项评审阶段</text>
+    <text x="720" y="322" fill="#64748B">2026-04-24</text>
+    <rect x="950" y="305" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="321" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P5 -->
+    <rect x="60" y="339" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="357" r="8" fill="#10B981"/>
+    <text x="85" y="362" font-size="11" fill="#FFFFFF" text-anchor="middle">P5</text>
+    <text x="380" y="363" fill="#1E293B">功能样机阶段</text>
+    <text x="720" y="363" fill="#64748B">2026-05-01</text>
+    <rect x="950" y="346" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="362" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P6 -->
+    <rect x="60" y="380" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="398" r="8" fill="#10B981"/>
+    <text x="85" y="403" font-size="11" fill="#FFFFFF" text-anchor="middle">P6</text>
+    <text x="380" y="404" fill="#1E293B">工作样机阶段</text>
+    <text x="720" y="404" fill="#64748B">2026-05-08</text>
+    <rect x="950" y="387" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="403" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P7 -->
+    <rect x="60" y="421" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="439" r="8" fill="#10B981"/>
+    <text x="85" y="444" font-size="11" fill="#FFFFFF" text-anchor="middle">P7</text>
+    <text x="380" y="445" fill="#1E293B">小批量试产阶段</text>
+    <text x="720" y="445" fill="#64748B">2026-05-15</text>
+    <rect x="950" y="428" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="444" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P8 -->
+    <rect x="60" y="462" width="1160" height="36" rx="4" fill="#F0FDF4"/>
+    <circle cx="85" cy="480" r="8" fill="#10B981"/>
+    <text x="85" y="485" font-size="11" fill="#FFFFFF" text-anchor="middle">P8</text>
+    <text x="380" y="486" fill="#1E293B">导入量产阶段</text>
+    <text x="720" y="486" fill="#64748B">2026-05-15</text>
+    <rect x="950" y="469" width="70" height="22" rx="6" fill="#D1FAE5"/>
+    <text x="985" y="485" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    <!-- P9 - in progress -->
+    <rect x="60" y="503" width="1160" height="36" rx="4" fill="#FEF9E7" stroke="#FCD34D" stroke-width="1"/>
+    <circle cx="85" cy="521" r="8" fill="#F59E0B"/>
+    <text x="85" y="526" font-size="11" fill="#FFFFFF" text-anchor="middle">P9</text>
+    <text x="380" y="527" fill="#1E293B" font-weight="600">新品上市阶段</text>
+    <text x="720" y="527" fill="#64748B">2026-05-22</text>
+    <rect x="950" y="510" width="70" height="22" rx="6" fill="#FEF3C7"/>
+    <text x="985" y="526" font-size="12" font-weight="600" fill="#D97706" text-anchor="middle">进行中</text>
+
+    <!-- P10 -->
+    <rect x="60" y="544" width="1160" height="36" rx="4" fill="#F8FAFC"/>
+    <circle cx="85" cy="562" r="8" fill="#94A3B8"/>
+    <text x="85" y="567" font-size="11" fill="#FFFFFF" text-anchor="middle">P10</text>
+    <text x="380" y="568" fill="#94A3B8">上市复盘阶段</text>
+    <text x="720" y="568" fill="#94A3B8">2026-05-29</text>
+    <rect x="950" y="551" width="70" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="985" y="567" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">未开始</text>
+
+    <!-- P11 -->
+    <rect x="60" y="585" width="1160" height="36" rx="4" fill="#F8FAFC"/>
+    <circle cx="85" cy="603" r="8" fill="#94A3B8"/>
+    <text x="85" y="608" font-size="11" fill="#FFFFFF" text-anchor="middle">P11</text>
+    <text x="380" y="609" fill="#94A3B8">EOL阶段</text>
+    <text x="720" y="609" fill="#94A3B8">2026-06-30</text>
+    <rect x="950" y="592" width="70" height="22" rx="6" fill="#F1F5F9"/>
+    <text x="985" y="608" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">未开始</text>
+  </g>
+
+  <rect x="60" y="650" width="1160" height="1" fill="#E2E8F0"/>
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12">
+    <rect x="60" y="665" width="14" height="14" rx="2" fill="#10B981"/>
+    <text x="80" y="677" fill="#475569">已完成 8</text>
+    <rect x="160" y="665" width="14" height="14" rx="2" fill="#F59E0B"/>
+    <text x="180" y="677" fill="#475569">进行中 1</text>
+    <rect x="260" y="665" width="14" height="14" rx="2" fill="#94A3B8"/>
+    <text x="280" y="677" fill="#475569">未开始 2</text>
+  </g>
+</svg>

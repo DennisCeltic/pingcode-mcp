@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient>
+    <filter id="cardSh"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dx="0" dy="1"/><feFlood flood-color="#0F172A" flood-opacity="0.05"/><feComposite operator="in" in2="SourceAlpha"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)"/>
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B">工作项状态分析</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">91个工作项 · 完成率 15.4%</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P04</text>
+
+  <!-- Left: Status distribution table -->
+  <rect x="60" y="105" width="700" height="340" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)"/>
+  <rect x="60" y="105" width="700" height="5" rx="2" fill="#2563EB"/>
+
+  <text x="90" y="145" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#1E293B">状态分布</text>
+
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14">
+    <!-- Row 1: 未开始 - BIG warning -->
+    <rect x="80" y="165" width="660" height="36" rx="4" fill="#FEF2F2"/>
+    <text x="100" y="189" fill="#1E293B" font-weight="600">未开始</text>
+    <text x="560" y="189" fill="#EF4444" font-weight="700">50</text>
+    <text x="620" y="189" fill="#EF4444">54.9%</text>
+    <!-- bar -->
+    <rect x="100" y="195" width="450" height="4" rx="2" fill="#FEE2E2"/>
+    <rect x="100" y="195" width="247" height="4" rx="2" fill="#EF4444"/>
+
+    <!-- Completed -->
+    <rect x="80" y="206" width="660" height="36" rx="4" fill="#F0FDF4"/>
+    <text x="100" y="230" fill="#1E293B" font-weight="600">已完成</text>
+    <text x="560" y="230" fill="#10B981" font-weight="700">13</text>
+    <text x="620" y="230" fill="#10B981">14.3%</text>
+    <rect x="100" y="236" width="450" height="4" rx="2" fill="#D1FAE5"/>
+    <rect x="100" y="236" width="64" height="4" rx="2" fill="#10B981"/>
+
+    <!-- 评审准备 -->
+    <rect x="80" y="247" width="660" height="36" rx="4" fill="#F8FAFC"/>
+    <text x="100" y="271" fill="#1E293B" font-weight="600">评审准备</text>
+    <text x="560" y="271" fill="#7C3AED" font-weight="700">12</text>
+    <text x="620" y="271" fill="#7C3AED">13.2%</text>
+    <rect x="100" y="277" width="450" height="4" rx="2" fill="#F3E8FF"/>
+    <rect x="100" y="277" width="59" height="4" rx="2" fill="#7C3AED"/>
+
+    <!-- 进行中 -->
+    <rect x="80" y="288" width="660" height="36" rx="4" fill="#FEF9E7"/>
+    <text x="100" y="312" fill="#1E293B" font-weight="600">进行中</text>
+    <text x="560" y="312" fill="#F59E0B" font-weight="700">3</text>
+    <text x="620" y="312" fill="#F59E0B">3.3%</text>
+    <rect x="100" y="318" width="450" height="4" rx="2" fill="#FEF3C7"/>
+    <rect x="100" y="318" width="15" height="4" rx="2" fill="#F59E0B"/>
+
+    <!-- Other rows condensed -->
+    <rect x="80" y="329" width="660" height="36" rx="4" fill="#F8FAFC"/>
+    <text x="100" y="353" fill="#64748B">其他状态 (发起变更/提交问题/待处理/关闭/评审中/打开/不予解决)</text>
+    <text x="560" y="353" fill="#64748B" font-weight="700">13</text>
+    <text x="620" y="353" fill="#64748B">14.3%</text>
+  </g>
+
+  <!-- Right: Type distribution -->
+  <rect x="780" y="105" width="440" height="340" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)"/>
+  <rect x="780" y="105" width="440" height="5" rx="2" fill="#7C3AED"/>
+
+  <text x="810" y="145" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#1E293B">类型分布</text>
+
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14">
+    <rect x="810" y="170" width="380" height="40" rx="6" fill="#EBF0FD"/>
+    <text x="830" y="195" fill="#1E293B" font-weight="600">任务</text>
+    <text x="1140" y="195" text-anchor="end" fill="#2563EB" font-weight="700">43</text>
+    <rect x="830" y="205" width="310" height="4" rx="2" fill="#DBEAFE"/>
+    <rect x="830" y="205" width="310" height="4" rx="2" fill="#2563EB"/>
+
+    <rect x="810" y="220" width="380" height="40" rx="6" fill="#EDE9FE"/>
+    <text x="830" y="245" fill="#1E293B" font-weight="600">里程碑</text>
+    <text x="1140" y="245" text-anchor="end" fill="#7C3AED" font-weight="700">12</text>
+    <rect x="830" y="255" width="310" height="4" rx="2" fill="#DDD6FE"/>
+    <rect x="830" y="255" width="87" height="4" rx="2" fill="#7C3AED"/>
+
+    <rect x="810" y="270" width="380" height="40" rx="6" fill="#D1FAE5"/>
+    <text x="830" y="295" fill="#1E293B" font-weight="600">需求</text>
+    <text x="1140" y="295" text-anchor="end" fill="#10B981" font-weight="700">11</text>
+    <rect x="830" y="305" width="310" height="4" rx="2" fill="#D1FAE5"/>
+    <rect x="830" y="305" width="79" height="4" rx="2" fill="#10B981"/>
+
+    <rect x="810" y="320" width="380" height="40" rx="6" fill="#FEF3C7"/>
+    <text x="830" y="345" fill="#1E293B" font-weight="600">问题管理</text>
+    <text x="1140" y="345" text-anchor="end" fill="#F59E0B" font-weight="700">4</text>
+
+    <rect x="810" y="360" width="380" height="40" rx="6" fill="#FEF2F2"/>
+    <text x="830" y="385" fill="#1E293B" font-weight="600">风险管理</text>
+    <text x="1140" y="385" text-anchor="end" fill="#EF4444" font-weight="700">3</text>
+
+    <rect x="810" y="400" width="380" height="40" rx="6" fill="#F8FAFC"/>
+    <text x="830" y="425" fill="#64748B">其他自定义类型</text>
+    <text x="1140" y="425" text-anchor="end" fill="#94A3B8" font-weight="600">18</text>
+  </g>
+
+  <!-- Bottom warning -->
+  <rect x="60" y="470" width="1160" height="100" rx="10" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="100" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#EF4444">⚠ 风险预警</text>
+  <text x="100" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#DC2626">50个工作项（54.9%）处于"未开始"状态，大量硬件开发任务（P5-P11阶段）尚未启动。</text>
+  <text x="100" y="562" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#DC2626">随着项目推进，任务集中爆发可能导致资源瓶颈和进度延期。</text>
+
+  <rect x="60" y="610" width="560" height="80" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)"/>
+  <text x="90" y="645" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">当前重点</text>
+  <text x="90" y="670" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">P4立项评审收尾 → P5功能样机启动 · 跟进评审准备项</text>
+
+  <rect x="660" y="610" width="560" height="80" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)"/>
+  <text x="690" y="645" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">建议措施</text>
+  <text x="690" y="670" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">加速P5-P8任务启动 · 资源提前规划 · 每周进度 Review</text>
+</svg>

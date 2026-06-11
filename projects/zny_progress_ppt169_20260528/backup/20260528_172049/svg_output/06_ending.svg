@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+  <rect width="1280" height="720" fill="url(#glow)"/>
+
+  <!-- Next steps section -->
+  <text x="640" y="100" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">后续行动计划</text>
+  <rect x="500" y="120" width="280" height="2" rx="1" fill="#60A5FA" opacity="0.4"/>
+
+  <g filter="url(#none)">
+    <rect x="120" y="155" width="320" height="130" rx="10" fill="#FFFFFF" fill-opacity="0.12"/>
+    <circle cx="155" cy="195" r="16" fill="#10B981"/>
+    <text x="155" y="201" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="185" y="195" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">P4立项评审收尾</text>
+    <text x="145" y="225" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">完成P4下未开始任务</text>
+    <text x="145" y="248" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">推进评审准备工作</text>
+    <text x="145" y="270" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">输出初版产品规格</text>
+
+    <rect x="480" y="155" width="320" height="130" rx="10" fill="#FFFFFF" fill-opacity="0.12"/>
+    <circle cx="515" cy="195" r="16" fill="#F59E0B"/>
+    <text x="515" y="201" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="545" y="195" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">启动P5功能样机</text>
+    <text x="505" y="225" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">结构/硬件/固件设计</text>
+    <text x="505" y="248" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">编写功能样机测试用例</text>
+    <text x="505" y="270" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">品质风险评估</text>
+
+    <rect x="840" y="155" width="320" height="130" rx="10" fill="#FFFFFF" fill-opacity="0.12"/>
+    <circle cx="875" cy="195" r="16" fill="#2563EB"/>
+    <text x="875" y="201" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="905" y="195" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">P9新品上市推进</text>
+    <text x="865" y="225" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">唯一进行中里程碑</text>
+    <text x="865" y="248" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">截止日期: 2026-05-22</text>
+    <text x="865" y="270" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#BFDBFE">重点关注交付质量</text>
+  </g>
+
+  <!-- Key takeaways -->
+  <rect x="200" y="330" width="880" height="130" rx="12" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="640" y="370" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="20" font-weight="700" fill="#BFDBFE" text-anchor="middle">核心建议</text>
+  <text x="640" y="405" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="15" fill="#93C5FD" text-anchor="middle">建立硬件开发专项跟踪机制 · 每周进度 Review · 提前识别 P5-P8 资源冲突</text>
+  <text x="640" y="435" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="15" fill="#93C5FD" text-anchor="middle">确保 P10（上市复盘）和 P11（EOL）前期准备不落后于计划</text>
+
+  <!-- Thank you -->
+  <text x="640" y="520" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="56" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="12">谢谢</text>
+
+  <text x="640" y="590" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" font-weight="300" fill="#93C5FD" text-anchor="middle" letter-spacing="4">THANK YOU</text>
+
+  <text x="640" y="650" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="14" fill="#60A5FA" opacity="0.6" text-anchor="middle">智能硬件项目管理 | ZNY | 项目管理员: 小冯 | 2026年5月</text>
+</svg>

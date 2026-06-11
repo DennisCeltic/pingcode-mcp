@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-06-11
+
+### 🚀 新增
+
+- **pingcode__export_pptx** — SVG 转 PPTX 导出工具
+  - 输入一组 SVG 页面内容和项目名称，生成可直接用 PowerPoint 打开的 .pptx 文件
+  - 支持 16:9 (ppt169) 和 4:3 (ppt43) 两种格式
+  - 依赖 ppt-master skill 的 Python 脚本（需 `pip3 install -r skills/ppt-master/requirements.txt`）
+  - 可与 AI 生成的 SVG 配合使用，实现端到端 PPT 生成
+
+---
+
 ## 2026-05-28
 
 ### 🚀 新增

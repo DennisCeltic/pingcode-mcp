@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2563EB" /><stop offset="100%" stop-color="#3B82F6" /></linearGradient>
+    <filter id="cardSh"><feGaussianBlur in="SourceAlpha" stdDeviation="3" /><feOffset dx="0" dy="1" /><feFlood flood-color="#0F172A" flood-opacity="0.05" /><feComposite operator="in" in2="SourceAlpha" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)" />
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B">工作项状态分析</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">91个工作项 · 完成率 15.4%</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P04</text>
+
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M72,105 H748 A12,12 0 0 1 760,117 V433 A12,12 0 0 1 748,445 H72 A12,12 0 0 1 60,433 V117 A12,12 0 0 1 72,105 Z" />
+  <path fill="#2563EB" d="M62,105 H758 A2,2 0 0 1 760,107 V108 A2,2 0 0 1 758,110 H62 A2,2 0 0 1 60,108 V107 A2,2 0 0 1 62,105 Z" />
+
+  <text x="90" y="145" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#1E293B">状态分布</text>
+
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14">
+    
+    <path fill="#FEF2F2" d="M84,165 H736 A4,4 0 0 1 740,169 V197 A4,4 0 0 1 736,201 H84 A4,4 0 0 1 80,197 V169 A4,4 0 0 1 84,165 Z" />
+    <text x="100" y="189" fill="#1E293B" font-weight="600">未开始</text>
+    <text x="560" y="189" fill="#EF4444" font-weight="700">50</text>
+    <text x="620" y="189" fill="#EF4444">54.9%</text>
+    
+    <path fill="#FEE2E2" d="M102,195 H548 A2,2 0 0 1 550,197 V197 A2,2 0 0 1 548,199 H102 A2,2 0 0 1 100,197 V197 A2,2 0 0 1 102,195 Z" />
+    <path fill="#EF4444" d="M102,195 H345 A2,2 0 0 1 347,197 V197 A2,2 0 0 1 345,199 H102 A2,2 0 0 1 100,197 V197 A2,2 0 0 1 102,195 Z" />
+
+    
+    <path fill="#F0FDF4" d="M84,206 H736 A4,4 0 0 1 740,210 V238 A4,4 0 0 1 736,242 H84 A4,4 0 0 1 80,238 V210 A4,4 0 0 1 84,206 Z" />
+    <text x="100" y="230" fill="#1E293B" font-weight="600">已完成</text>
+    <text x="560" y="230" fill="#10B981" font-weight="700">13</text>
+    <text x="620" y="230" fill="#10B981">14.3%</text>
+    <path fill="#D1FAE5" d="M102,236 H548 A2,2 0 0 1 550,238 V238 A2,2 0 0 1 548,240 H102 A2,2 0 0 1 100,238 V238 A2,2 0 0 1 102,236 Z" />
+    <path fill="#10B981" d="M102,236 H162 A2,2 0 0 1 164,238 V238 A2,2 0 0 1 162,240 H102 A2,2 0 0 1 100,238 V238 A2,2 0 0 1 102,236 Z" />
+
+    
+    <path fill="#F8FAFC" d="M84,247 H736 A4,4 0 0 1 740,251 V279 A4,4 0 0 1 736,283 H84 A4,4 0 0 1 80,279 V251 A4,4 0 0 1 84,247 Z" />
+    <text x="100" y="271" fill="#1E293B" font-weight="600">评审准备</text>
+    <text x="560" y="271" fill="#7C3AED" font-weight="700">12</text>
+    <text x="620" y="271" fill="#7C3AED">13.2%</text>
+    <path fill="#F3E8FF" d="M102,277 H548 A2,2 0 0 1 550,279 V279 A2,2 0 0 1 548,281 H102 A2,2 0 0 1 100,279 V279 A2,2 0 0 1 102,277 Z" />
+    <path fill="#7C3AED" d="M102,277 H157 A2,2 0 0 1 159,279 V279 A2,2 0 0 1 157,281 H102 A2,2 0 0 1 100,279 V279 A2,2 0 0 1 102,277 Z" />
+
+    
+    <path fill="#FEF9E7" d="M84,288 H736 A4,4 0 0 1 740,292 V320 A4,4 0 0 1 736,324 H84 A4,4 0 0 1 80,320 V292 A4,4 0 0 1 84,288 Z" />
+    <text x="100" y="312" fill="#1E293B" font-weight="600">进行中</text>
+    <text x="560" y="312" fill="#F59E0B" font-weight="700">3</text>
+    <text x="620" y="312" fill="#F59E0B">3.3%</text>
+    <path fill="#FEF3C7" d="M102,318 H548 A2,2 0 0 1 550,320 V320 A2,2 0 0 1 548,322 H102 A2,2 0 0 1 100,320 V320 A2,2 0 0 1 102,318 Z" />
+    <path fill="#F59E0B" d="M102,318 H113 A2,2 0 0 1 115,320 V320 A2,2 0 0 1 113,322 H102 A2,2 0 0 1 100,320 V320 A2,2 0 0 1 102,318 Z" />
+
+    
+    <path fill="#F8FAFC" d="M84,329 H736 A4,4 0 0 1 740,333 V361 A4,4 0 0 1 736,365 H84 A4,4 0 0 1 80,361 V333 A4,4 0 0 1 84,329 Z" />
+    <text x="100" y="353" fill="#64748B">其他状态 (发起变更/提交问题/待处理/关闭/评审中/打开/不予解决)</text>
+    <text x="560" y="353" fill="#64748B" font-weight="700">13</text>
+    <text x="620" y="353" fill="#64748B">14.3%</text>
+  </g>
+
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M792,105 H1208 A12,12 0 0 1 1220,117 V433 A12,12 0 0 1 1208,445 H792 A12,12 0 0 1 780,433 V117 A12,12 0 0 1 792,105 Z" />
+  <path fill="#7C3AED" d="M782,105 H1218 A2,2 0 0 1 1220,107 V108 A2,2 0 0 1 1218,110 H782 A2,2 0 0 1 780,108 V107 A2,2 0 0 1 782,105 Z" />
+
+  <text x="810" y="145" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#1E293B">类型分布</text>
+
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14">
+    <path fill="#EBF0FD" d="M816,170 H1184 A6,6 0 0 1 1190,176 V204 A6,6 0 0 1 1184,210 H816 A6,6 0 0 1 810,204 V176 A6,6 0 0 1 816,170 Z" />
+    <text x="830" y="195" fill="#1E293B" font-weight="600">任务</text>
+    <text x="1140" y="195" text-anchor="end" fill="#2563EB" font-weight="700">43</text>
+    <path fill="#DBEAFE" d="M832,205 H1138 A2,2 0 0 1 1140,207 V207 A2,2 0 0 1 1138,209 H832 A2,2 0 0 1 830,207 V207 A2,2 0 0 1 832,205 Z" />
+    <path fill="#2563EB" d="M832,205 H1138 A2,2 0 0 1 1140,207 V207 A2,2 0 0 1 1138,209 H832 A2,2 0 0 1 830,207 V207 A2,2 0 0 1 832,205 Z" />
+
+    <path fill="#EDE9FE" d="M816,220 H1184 A6,6 0 0 1 1190,226 V254 A6,6 0 0 1 1184,260 H816 A6,6 0 0 1 810,254 V226 A6,6 0 0 1 816,220 Z" />
+    <text x="830" y="245" fill="#1E293B" font-weight="600">里程碑</text>
+    <text x="1140" y="245" text-anchor="end" fill="#7C3AED" font-weight="700">12</text>
+    <path fill="#DDD6FE" d="M832,255 H1138 A2,2 0 0 1 1140,257 V257 A2,2 0 0 1 1138,259 H832 A2,2 0 0 1 830,257 V257 A2,2 0 0 1 832,255 Z" />
+    <path fill="#7C3AED" d="M832,255 H915 A2,2 0 0 1 917,257 V257 A2,2 0 0 1 915,259 H832 A2,2 0 0 1 830,257 V257 A2,2 0 0 1 832,255 Z" />
+
+    <path fill="#D1FAE5" d="M816,270 H1184 A6,6 0 0 1 1190,276 V304 A6,6 0 0 1 1184,310 H816 A6,6 0 0 1 810,304 V276 A6,6 0 0 1 816,270 Z" />
+    <text x="830" y="295" fill="#1E293B" font-weight="600">需求</text>
+    <text x="1140" y="295" text-anchor="end" fill="#10B981" font-weight="700">11</text>
+    <path fill="#D1FAE5" d="M832,305 H1138 A2,2 0 0 1 1140,307 V307 A2,2 0 0 1 1138,309 H832 A2,2 0 0 1 830,307 V307 A2,2 0 0 1 832,305 Z" />
+    <path fill="#10B981" d="M832,305 H907 A2,2 0 0 1 909,307 V307 A2,2 0 0 1 907,309 H832 A2,2 0 0 1 830,307 V307 A2,2 0 0 1 832,305 Z" />
+
+    <path fill="#FEF3C7" d="M816,320 H1184 A6,6 0 0 1 1190,326 V354 A6,6 0 0 1 1184,360 H816 A6,6 0 0 1 810,354 V326 A6,6 0 0 1 816,320 Z" />
+    <text x="830" y="345" fill="#1E293B" font-weight="600">问题管理</text>
+    <text x="1140" y="345" text-anchor="end" fill="#F59E0B" font-weight="700">4</text>
+
+    <path fill="#FEF2F2" d="M816,360 H1184 A6,6 0 0 1 1190,366 V394 A6,6 0 0 1 1184,400 H816 A6,6 0 0 1 810,394 V366 A6,6 0 0 1 816,360 Z" />
+    <text x="830" y="385" fill="#1E293B" font-weight="600">风险管理</text>
+    <text x="1140" y="385" text-anchor="end" fill="#EF4444" font-weight="700">3</text>
+
+    <path fill="#F8FAFC" d="M816,400 H1184 A6,6 0 0 1 1190,406 V434 A6,6 0 0 1 1184,440 H816 A6,6 0 0 1 810,434 V406 A6,6 0 0 1 816,400 Z" />
+    <text x="830" y="425" fill="#64748B">其他自定义类型</text>
+    <text x="1140" y="425" text-anchor="end" fill="#94A3B8" font-weight="600">18</text>
+  </g>
+
+  
+  <path fill="#FEF2F2" stroke="#FECACA" stroke-width="1" d="M70,470 H1210 A10,10 0 0 1 1220,480 V560 A10,10 0 0 1 1210,570 H70 A10,10 0 0 1 60,560 V480 A10,10 0 0 1 70,470 Z" />
+  <text x="100" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#EF4444">⚠ 风险预警</text>
+  <text x="100" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#DC2626">50个工作项（54.9%）处于"未开始"状态，大量硬件开发任务（P5-P11阶段）尚未启动。</text>
+  <text x="100" y="562" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#DC2626">随着项目推进，任务集中爆发可能导致资源瓶颈和进度延期。</text>
+
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M70,610 H610 A10,10 0 0 1 620,620 V680 A10,10 0 0 1 610,690 H70 A10,10 0 0 1 60,680 V620 A10,10 0 0 1 70,610 Z" />
+  <text x="90" y="645" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">当前重点</text>
+  <text x="90" y="670" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">P4立项评审收尾 → P5功能样机启动 · 跟进评审准备项</text>
+
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)" d="M670,610 H1210 A10,10 0 0 1 1220,620 V680 A10,10 0 0 1 1210,690 H670 A10,10 0 0 1 660,680 V620 A10,10 0 0 1 670,610 Z" />
+  <text x="690" y="645" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#1E293B">建议措施</text>
+  <text x="690" y="670" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">加速P5-P8任务启动 · 资源提前规划 · 每周进度 Review</text>
+</svg>

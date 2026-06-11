@@ -18,6 +18,7 @@ import { generateWeeklyReport } from './tools/report.js';
 import { createFromPrd } from './tools/prd.js';
 import { createFromWbs } from './tools/wbs.js';
 import { listActivities } from './tools/activity.js';
+import { exportPptx } from './tools/ppt.js';
 import { logWarn, logInfo, logError } from './utils/logger.js';
 import { validateArgs } from './utils/validation.js';
 const TOOLS = [
@@ -567,6 +568,33 @@ const TOOLS = [
                 },
             },
             required: ['project_id', 'stages'],
+        },
+    },
+    {
+        name: 'pingcode__export_pptx',
+        description: '将 SVG 页面导出为可编辑的 PPTX 文件。' +
+            '输入一组 SVG 页面内容和项目名称，生成可直接用 PowerPoint 打开的 .pptx 文件。' +
+            '每个 SVG 对应一页幻灯片，支持 16:9 和 4:3 两种格式。' +
+            '前置条件：需要安装 ppt-master skill (pip3 install -r skills/ppt-master/requirements.txt)',
+        inputSchema: {
+            type: 'object',
+            properties: {
+                project_name: { type: 'string', description: '项目名称，用作输出目录前缀' },
+                format: { type: 'string', description: 'PPT 格式: ppt169 (16:9) 或 ppt43 (4:3)', enum: ['ppt169', 'ppt43'], default: 'ppt169' },
+                pages: {
+                    type: 'array',
+                    description: 'SVG 页面列表，每页包含 filename 和 svg_content',
+                    items: {
+                        type: 'object',
+                        properties: {
+                            filename: { type: 'string', description: 'SVG 文件名，如 "01_cover.svg"' },
+                            svg_content: { type: 'string', description: 'SVG XML 内容字符串' },
+                        },
+                        required: ['filename', 'svg_content'],
+                    },
+                },
+            },
+            required: ['project_name', 'pages'],
         },
     },
     {
@@ -1142,6 +1170,22 @@ async function handleToolCall(request) {
                         {
                             type: 'text',
                             text: data,
+                        },
+                    ],
+                };
+            }
+            case 'pingcode__export_pptx': {
+                const pages = (args?.pages ?? []);
+                const data = await exportPptx({
+                    project_name: String(args?.project_name),
+                    format: args?.format || 'ppt169',
+                    pages,
+                });
+                return {
+                    content: [
+                        {
+                            type: 'text',
+                            text: JSON.stringify(data, null, 2),
                         },
                     ],
                 };

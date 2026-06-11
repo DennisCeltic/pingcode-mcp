@@ -8,4 +8,5 @@ export * from './wiki.js';
 export * from './attachment.js';
 export * from './report.js';
 export * from './prd.js';
+export * from './ppt.js';
 //# sourceMappingURL=index.js.map

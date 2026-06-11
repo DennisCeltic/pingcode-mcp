@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2563EB" /><stop offset="100%" stop-color="#3B82F6" /></linearGradient>
+    <filter id="cardSh"><feGaussianBlur in="SourceAlpha" stdDeviation="4" /><feOffset dx="0" dy="2" /><feFlood flood-color="#0F172A" flood-opacity="0.06" /><feComposite operator="in" in2="SourceAlpha" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)" />
+
+  <text x="60" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#2563EB" letter-spacing="2">项目总览</text>
+  <text x="1220" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P02</text>
+
+  <text x="60" y="110" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="32" font-weight="700" fill="#1E293B">智能硬件项目管理</text>
+  <text x="60" y="148" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#64748B">ZNY · 混合项目 · 生命周期: 需求设计 → EOL</text>
+
+  
+  <g filter="url(#cardSh)">
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M72,190 H608 A12,12 0 0 1 620,202 V338 A12,12 0 0 1 608,350 H72 A12,12 0 0 1 60,338 V202 A12,12 0 0 1 72,190 Z" />
+    <path fill="#2563EB" d="M78.50,210 H78.50 A2.50,3 0 0 1 81,213 V267 A2.50,3 0 0 1 78.50,270 H78.50 A2.50,3 0 0 1 76,267 V213 A2.50,3 0 0 1 78.50,210 Z" />
+    <text x="100" y="235" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">总工作项</text>
+    <text x="100" y="258" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">任务 + 里程碑 + 需求 + 问题</text>
+    <text x="100" y="320" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#1E293B">91</text>
+    <text x="230" y="320" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" fill="#64748B">个</text>
+
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M672,190 H1208 A12,12 0 0 1 1220,202 V338 A12,12 0 0 1 1208,350 H672 A12,12 0 0 1 660,338 V202 A12,12 0 0 1 672,190 Z" />
+    <path fill="#F59E0B" d="M678.50,210 H678.50 A2.50,3 0 0 1 681,213 V267 A2.50,3 0 0 1 678.50,270 H678.50 A2.50,3 0 0 1 676,267 V213 A2.50,3 0 0 1 678.50,210 Z" />
+    <text x="700" y="235" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">完成率</text>
+    <text x="700" y="258" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">已完成+关闭 / 总数</text>
+    <text x="700" y="320" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#F59E0B">15.4%</text>
+    <text x="890" y="320" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#64748B">14/91</text>
+
+    
+    <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M72,380 H608 A12,12 0 0 1 620,392 V528 A12,12 0 0 1 608,540 H72 A12,12 0 0 1 60,528 V392 A12,12 0 0 1 72,380 Z" />
+    <path fill="#10B981" d="M78.50,400 H78.50 A2.50,3 0 0 1 81,403 V457 A2.50,3 0 0 1 78.50,460 H78.50 A2.50,3 0 0 1 76,457 V403 A2.50,3 0 0 1 78.50,400 Z" />
+    <text x="100" y="425" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">里程碑完成</text>
+    <text x="100" y="448" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">已完成 / 总数</text>
+    <text x="100" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#10B981">9/12</text>
+    <text x="270" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#64748B">75%</text>
+
+    
+    <path fill="#FEF2F2" stroke="#FECACA" stroke-width="1" d="M672,380 H1208 A12,12 0 0 1 1220,392 V528 A12,12 0 0 1 1208,540 H672 A12,12 0 0 1 660,528 V392 A12,12 0 0 1 672,380 Z" />
+    <path fill="#EF4444" d="M678.50,400 H678.50 A2.50,3 0 0 1 681,403 V457 A2.50,3 0 0 1 678.50,460 H678.50 A2.50,3 0 0 1 676,457 V403 A2.50,3 0 0 1 678.50,400 Z" />
+    <text x="700" y="425" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">风险警告</text>
+    <text x="700" y="448" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">未开始任务比例过高</text>
+    <text x="700" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="40" font-weight="800" fill="#EF4444">54.9%</text>
+    <text x="870" y="500" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#EF4444">50个任务未启动</text>
+
+    
+    <path fill="#FEE2E2" d="M704,525 H1096 A4,4 0 0 1 1100,529 V529 A4,4 0 0 1 1096,533 H704 A4,4 0 0 1 700,529 V529 A4,4 0 0 1 704,525 Z" />
+    <path fill="#EF4444" d="M704,525 H916 A4,4 0 0 1 920,529 V529 A4,4 0 0 1 916,533 H704 A4,4 0 0 1 700,529 V529 A4,4 0 0 1 704,525 Z" />
+  </g>
+
+  
+  <path fill="#EBF0FD" d="M68,580 H1212 A8,8 0 0 1 1220,588 V632 A8,8 0 0 1 1212,640 H68 A8,8 0 0 1 60,632 V588 A8,8 0 0 1 68,580 Z" />
+  <text x="640" y="618" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#2563EB" text-anchor="middle" font-weight="600">
+    当前节点: P4立项评审 → P5功能样机阶段  |  进行中任务: 3个  |  待处理: 3个
+  </text>
+
+  <rect x="60" y="680" width="1160" height="1" fill="#E2E8F0" />
+  <text x="60" y="710" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">数据来源: PingCode ZNY 项目 | 更新时间: 2026-05-28</text>
+</svg>

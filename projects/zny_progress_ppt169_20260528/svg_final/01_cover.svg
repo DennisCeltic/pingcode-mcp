@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)" />
+  <rect width="1280" height="720" fill="url(#glow)" />
+
+  <path fill="url(#accentBar)" opacity="0.9" d="M442,260 H838 A2,2 0 0 1 840,262 V262 A2,2 0 0 1 838,264 H442 A2,2 0 0 1 440,262 V262 A2,2 0 0 1 442,260 Z" />
+
+  <text x="640" y="220" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="48" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">
+    智能硬件项目管理
+  </text>
+
+  <text x="640" y="310" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="400" fill="#BFDBFE" text-anchor="middle" letter-spacing="6">
+    项目进展汇报
+  </text>
+
+  <path fill="#60A5FA" opacity="0.4" d="M541,360 H739 A1,1 0 0 1 740,361 V361 A1,1 0 0 1 739,362 H541 A1,1 0 0 1 540,361 V361 A1,1 0 0 1 541,360 Z" />
+
+  <text x="640" y="420" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="400" fill="#93C5FD" text-anchor="middle" letter-spacing="2">
+    ZNY · Hybrid · 2026年5月
+  </text>
+
+  <rect x="60" y="660" width="1160" height="1" fill="#3B82F6" opacity="0.3" />
+  <text x="60" y="695" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#60A5FA" opacity="0.7">项目管理员: 小冯 | 类型: 混合项目 | 标识: ZNY</text>
+  <text x="1220" y="695" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#60A5FA" opacity="0.7" text-anchor="end">P01</text>
+</svg>

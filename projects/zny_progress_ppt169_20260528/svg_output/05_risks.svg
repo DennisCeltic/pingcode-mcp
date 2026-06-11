@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient>
+    <filter id="cardSh"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dx="0" dy="1"/><feFlood flood-color="#0F172A" flood-opacity="0.05"/><feComposite operator="in" in2="SourceAlpha"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)"/>
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B">风险与问题</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">3项风险 · 4项问题 · 3项变更 · 3项待处理</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P05</text>
+
+  <!-- Risk cards -->
+  <g filter="url(#cardSh)">
+    <!-- Risk 1 -->
+    <rect x="60" y="110" width="380" height="260" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="60" y="110" width="380" height="5" rx="2" fill="#EF4444"/>
+    <rect x="76" y="130" width="30" height="30" rx="6" fill="#FEF2F2"/>
+    <text x="91" y="150" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="800" fill="#EF4444" text-anchor="middle">1</text>
+    <text x="120" y="152" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#1E293B">任务积压风险</text>
+    <rect x="80" y="175" width="340" height="1" fill="#E2E8F0"/>
+    <text x="80" y="200" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">50个未开始任务 (54.9%)</text>
+    <text x="80" y="225" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">P5-P11阶段集中积压</text>
+    <rect x="80" y="250" width="340" height="6" rx="3" fill="#FEE2E2"/>
+    <rect x="80" y="250" width="255" height="6" rx="3" fill="#EF4444"/>
+    <text x="80" y="278" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#EF4444" font-weight="600">严重程度: 高</text>
+
+    <rect x="80" y="300" width="340" height="45" rx="6" fill="#FEF2F2"/>
+    <text x="100" y="328" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#DC2626">建议: 提前启动P5功能样机任务</text>
+
+    <!-- Risk 2 -->
+    <rect x="450" y="110" width="380" height="260" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="450" y="110" width="380" height="5" rx="2" fill="#F59E0B"/>
+    <rect x="466" y="130" width="30" height="30" rx="6" fill="#FEF9E7"/>
+    <text x="481" y="150" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="800" fill="#F59E0B" text-anchor="middle">2</text>
+    <text x="510" y="152" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#1E293B">里程碑与任务脱节</text>
+    <rect x="470" y="175" width="340" height="1" fill="#E2E8F0"/>
+    <text x="470" y="200" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">P4里程碑已完成，但P4下</text>
+    <text x="470" y="225" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">多个任务仍为"未开始"</text>
+    <rect x="470" y="250" width="340" height="6" rx="3" fill="#FEF3C7"/>
+    <rect x="470" y="250" width="170" height="6" rx="3" fill="#F59E0B"/>
+    <text x="470" y="278" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#D97706" font-weight="600">严重程度: 中</text>
+
+    <rect x="470" y="300" width="340" height="45" rx="6" fill="#FEF9E7"/>
+    <text x="490" y="328" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#D97706">建议: 核查P4里程碑与任务一致性</text>
+
+    <!-- Risk 3 -->
+    <rect x="840" y="110" width="380" height="260" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="840" y="110" width="380" height="5" rx="2" fill="#EF4444"/>
+    <rect x="856" y="130" width="30" height="30" rx="6" fill="#FEF2F2"/>
+    <text x="871" y="150" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="800" fill="#EF4444" text-anchor="middle">3</text>
+    <text x="900" y="152" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#1E293B">硬件开发节奏</text>
+    <rect x="860" y="175" width="340" height="1" fill="#E2E8F0"/>
+    <text x="860" y="200" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">P5-P8硬件任务全部未开始</text>
+    <text x="860" y="225" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">涉及结构/硬件/固件/包材</text>
+    <rect x="860" y="250" width="340" height="6" rx="3" fill="#FEE2E2"/>
+    <rect x="860" y="250" width="255" height="6" rx="3" fill="#EF4444"/>
+    <text x="860" y="278" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#EF4444" font-weight="600">严重程度: 高</text>
+
+    <rect x="860" y="300" width="340" height="45" rx="6" fill="#FEF2F2"/>
+    <text x="880" y="328" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#DC2626">建议: 建立硬件开发专项跟踪</text>
+  </g>
+
+  <!-- Bottom: Issue summary cards -->
+  <rect x="60" y="400" width="380" height="160" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)"/>
+  <rect x="60" y="400" width="380" height="5" rx="2" fill="#7C3AED"/>
+  <text x="90" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">问题管理</text>
+  <text x="90" y="475" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">已提交问题</text>
+  <text x="90" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="44" font-weight="800" fill="#7C3AED">4</text>
+  <text x="165" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#64748B">个</text>
+  <text x="90" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">提交问题: 3 · 待处理: 3</text>
+
+  <rect x="450" y="400" width="380" height="160" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)"/>
+  <rect x="450" y="400" width="380" height="5" rx="2" fill="#F59E0B"/>
+  <text x="480" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">变更管理</text>
+  <text x="480" y="475" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">发起变更</text>
+  <text x="480" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="44" font-weight="800" fill="#F59E0B">3</text>
+  <text x="555" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#64748B">个</text>
+  <text x="480" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">评审中: 1 · 评审准备: 12</text>
+
+  <rect x="840" y="400" width="380" height="160" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardSh)"/>
+  <rect x="840" y="400" width="380" height="5" rx="2" fill="#10B981"/>
+  <text x="870" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E293B">进行中任务</text>
+  <text x="870" y="475" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">活跃工作项</text>
+  <text x="870" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="44" font-weight="800" fill="#10B981">3</text>
+  <text x="945" y="510" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#64748B">个</text>
+  <text x="870" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">P2.3 ID详细设计 · P4.1 项目启动</text>
+
+  <rect x="60" y="590" width="1160" height="60" rx="8" fill="#EBF0FD"/>
+  <text x="100" y="628" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#2563EB" font-weight="600">总体评估: 项目里程碑节奏正常（75%完成），但子任务执行存在滞后，建议加强任务级跟踪和资源协调。</text>
+
+  <rect x="60" y="680" width="1160" height="1" fill="#E2E8F0"/>
+  <text x="60" y="710" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">风险管理: 3项 | 问题管理: 4项 | 变更: 3项 | 建议: 每周 Review + 专项跟踪</text>
+</svg>

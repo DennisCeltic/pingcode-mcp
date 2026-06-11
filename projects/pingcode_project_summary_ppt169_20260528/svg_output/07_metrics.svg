@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="3"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.06"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)"/>
+
+  <text x="60" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="28" font-weight="700" fill="#1E293B" letter-spacing="1">项目成果与关键指标</text>
+  <text x="60" y="85" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="15" fill="#64748B">PingCode系统实施 · 全生命周期数据</text>
+  <text x="1220" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="13" fill="#94A3B8" text-anchor="end">P07</text>
+
+  <!-- KPI Cards 2x3 Layout -->
+  <g filter="url(#cardShadow)">
+    <!-- Card 1: 总任务数 -->
+    <rect x="60" y="120" width="360" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="76" y="140" width="5" height="60" rx="3" fill="#2563EB"/>
+    <text x="100" y="165" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">总任务数</text>
+    <text x="100" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">WBS 工作项总数</text>
+    <text x="100" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#1E293B" letter-spacing="-1">19</text>
+    <circle cx="115" cy="280" r="14" fill="#ECFDF5"/>
+    <text x="115" y="285" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" fill="#10B981" text-anchor="middle">ALL</text>
+    <text x="140" y="286" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" font-weight="600" fill="#10B981">全部创建完成</text>
+
+    <!-- Card 2: 阶段数 -->
+    <rect x="460" y="120" width="360" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="476" y="140" width="5" height="60" rx="3" fill="#7C3AED"/>
+    <text x="500" y="165" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">阶段数</text>
+    <text x="500" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">管理粒度</text>
+    <text x="500" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#1E293B">5</text>
+    <text x="520" y="286" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">阶段覆盖完整</text>
+
+    <!-- Card 3: 里程碑 -->
+    <rect x="860" y="120" width="360" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="876" y="140" width="5" height="60" rx="3" fill="#F59E0B"/>
+    <text x="900" y="165" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">里程碑</text>
+    <text x="900" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">关键节点</text>
+    <text x="900" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="800" fill="#1E293B">6</text>
+    <text x="920" y="286" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">节点全部设定</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <!-- Card 4: 项目周期 -->
+    <rect x="60" y="330" width="360" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="76" y="350" width="5" height="60" rx="3" fill="#10B981"/>
+    <text x="100" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">项目周期</text>
+    <text x="100" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">预计持续时长</text>
+    <text x="100" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="40" font-weight="800" fill="#1E293B">~7个月</text>
+    <text x="100" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">2026.05 — 2026.12</text>
+
+    <!-- Card 5: 上线目标 -->
+    <rect x="460" y="330" width="360" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="476" y="350" width="5" height="60" rx="3" fill="#EF4444"/>
+    <text x="500" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">系统上线</text>
+    <text x="500" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">里程碑时间</text>
+    <text x="500" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="30" font-weight="800" fill="#1E293B">2026.06.30</text>
+    <text x="500" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">正式切换上线</text>
+
+    <!-- Card 6: 项目经理 -->
+    <rect x="860" y="330" width="360" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="876" y="350" width="5" height="60" rx="3" fill="#3B82F6"/>
+    <text x="900" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="600" fill="#475569">管理员</text>
+    <text x="900" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">项目经理</text>
+    <text x="900" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="40" font-weight="800" fill="#1E293B">小冯</text>
+    <text x="900" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#64748B">项目管理员</text>
+  </g>
+
+  <!-- Deliverables section -->
+  <text x="60" y="560" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E293B">核心交付物</text>
+
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#475569">
+    <rect x="60" y="580" width="230" height="40" rx="6" fill="#EBF0FD"/>
+    <text x="175" y="606" text-anchor="middle">系统方案</text>
+
+    <rect x="310" y="580" width="230" height="40" rx="6" fill="#EDE9FE"/>
+    <text x="425" y="606" text-anchor="middle">权限配置表</text>
+
+    <rect x="560" y="580" width="230" height="40" rx="6" fill="#D1FAE5"/>
+    <text x="675" y="606" text-anchor="middle">用户手册</text>
+
+    <rect x="810" y="580" width="230" height="40" rx="6" fill="#FEF3C7"/>
+    <text x="925" y="606" text-anchor="middle">使用规范</text>
+
+    <rect x="60" y="635" width="230" height="40" rx="6" fill="#FEF2F2"/>
+    <text x="175" y="661" text-anchor="middle">培训签到表 ×2</text>
+
+    <rect x="310" y="635" width="230" height="40" rx="6" fill="#D1FAE5"/>
+    <text x="425" y="661" text-anchor="middle">服务验收单</text>
+  </g>
+</svg>

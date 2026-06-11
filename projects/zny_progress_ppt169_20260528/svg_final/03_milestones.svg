@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2563EB" /><stop offset="100%" stop-color="#3B82F6" /></linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)" />
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="700" fill="#1E293B">里程碑进展</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#64748B">12个里程碑 · 9已完成 · 1进行中 · 2未开始 · 完成率 75%</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">P03</text>
+
+  
+  <path fill="#E2E8F0" d="M65,100 H1215 A5,5 0 0 1 1220,105 V105 A5,5 0 0 1 1215,110 H65 A5,5 0 0 1 60,105 V105 A5,5 0 0 1 65,100 Z" />
+  <path fill="#10B981" d="M65,100 H925 A5,5 0 0 1 930,105 V105 A5,5 0 0 1 925,110 H65 A5,5 0 0 1 60,105 V105 A5,5 0 0 1 65,100 Z" />
+  <text x="640" y="98" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">75% 完成 (9/12)</text>
+
+  
+  <path fill="#F1F5F9" d="M66,130 H1214 A6,6 0 0 1 1220,136 V159 A6,6 0 0 1 1214,165 H66 A6,6 0 0 1 60,159 V136 A6,6 0 0 1 66,130 Z" />
+  <text x="80" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">里程碑</text>
+  <text x="380" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">名称</text>
+  <text x="720" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">截止日期</text>
+  <text x="950" y="153" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">状态</text>
+
+  
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14">
+    
+    <path fill="#F0FDF4" d="M64,175 H1216 A4,4 0 0 1 1220,179 V207 A4,4 0 0 1 1216,211 H64 A4,4 0 0 1 60,207 V179 A4,4 0 0 1 64,175 Z" />
+    <circle cx="85" cy="193" r="8" fill="#10B981" />
+    <text x="85" y="198" font-size="11" fill="#FFFFFF" text-anchor="middle">P1</text>
+    <text x="380" y="199" fill="#1E293B">需求设计阶段</text>
+    <text x="720" y="199" fill="#64748B">-</text>
+    <path fill="#D1FAE5" d="M956,182 H1014 A6,6 0 0 1 1020,188 V198 A6,6 0 0 1 1014,204 H956 A6,6 0 0 1 950,198 V188 A6,6 0 0 1 956,182 Z" />
+    <text x="985" y="198" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#F0FDF4" d="M64,216 H1216 A4,4 0 0 1 1220,220 V248 A4,4 0 0 1 1216,252 H64 A4,4 0 0 1 60,248 V220 A4,4 0 0 1 64,216 Z" />
+    <circle cx="85" cy="234" r="8" fill="#10B981" />
+    <text x="85" y="239" font-size="11" fill="#FFFFFF" text-anchor="middle">P2</text>
+    <text x="380" y="240" fill="#1E293B">ID设计阶段</text>
+    <text x="720" y="240" fill="#64748B">-</text>
+    <path fill="#D1FAE5" d="M956,223 H1014 A6,6 0 0 1 1020,229 V239 A6,6 0 0 1 1014,245 H956 A6,6 0 0 1 950,239 V229 A6,6 0 0 1 956,223 Z" />
+    <text x="985" y="239" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#F0FDF4" d="M64,257 H1216 A4,4 0 0 1 1220,261 V289 A4,4 0 0 1 1216,293 H64 A4,4 0 0 1 60,289 V261 A4,4 0 0 1 64,257 Z" />
+    <circle cx="85" cy="275" r="8" fill="#10B981" />
+    <text x="85" y="280" font-size="11" fill="#FFFFFF" text-anchor="middle">P3</text>
+    <text x="380" y="281" fill="#1E293B">概念设计阶段</text>
+    <text x="720" y="281" fill="#64748B">2026-04-10</text>
+    <path fill="#D1FAE5" d="M956,264 H1014 A6,6 0 0 1 1020,270 V280 A6,6 0 0 1 1014,286 H956 A6,6 0 0 1 950,280 V270 A6,6 0 0 1 956,264 Z" />
+    <text x="985" y="280" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#F0FDF4" d="M64,298 H1216 A4,4 0 0 1 1220,302 V330 A4,4 0 0 1 1216,334 H64 A4,4 0 0 1 60,330 V302 A4,4 0 0 1 64,298 Z" />
+    <circle cx="85" cy="316" r="8" fill="#10B981" />
+    <text x="85" y="321" font-size="11" fill="#FFFFFF" text-anchor="middle">P4</text>
+    <text x="380" y="322" fill="#1E293B">立项评审阶段</text>
+    <text x="720" y="322" fill="#64748B">2026-04-24</text>
+    <path fill="#D1FAE5" d="M956,305 H1014 A6,6 0 0 1 1020,311 V321 A6,6 0 0 1 1014,327 H956 A6,6 0 0 1 950,321 V311 A6,6 0 0 1 956,305 Z" />
+    <text x="985" y="321" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#F0FDF4" d="M64,339 H1216 A4,4 0 0 1 1220,343 V371 A4,4 0 0 1 1216,375 H64 A4,4 0 0 1 60,371 V343 A4,4 0 0 1 64,339 Z" />
+    <circle cx="85" cy="357" r="8" fill="#10B981" />
+    <text x="85" y="362" font-size="11" fill="#FFFFFF" text-anchor="middle">P5</text>
+    <text x="380" y="363" fill="#1E293B">功能样机阶段</text>
+    <text x="720" y="363" fill="#64748B">2026-05-01</text>
+    <path fill="#D1FAE5" d="M956,346 H1014 A6,6 0 0 1 1020,352 V362 A6,6 0 0 1 1014,368 H956 A6,6 0 0 1 950,362 V352 A6,6 0 0 1 956,346 Z" />
+    <text x="985" y="362" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#F0FDF4" d="M64,380 H1216 A4,4 0 0 1 1220,384 V412 A4,4 0 0 1 1216,416 H64 A4,4 0 0 1 60,412 V384 A4,4 0 0 1 64,380 Z" />
+    <circle cx="85" cy="398" r="8" fill="#10B981" />
+    <text x="85" y="403" font-size="11" fill="#FFFFFF" text-anchor="middle">P6</text>
+    <text x="380" y="404" fill="#1E293B">工作样机阶段</text>
+    <text x="720" y="404" fill="#64748B">2026-05-08</text>
+    <path fill="#D1FAE5" d="M956,387 H1014 A6,6 0 0 1 1020,393 V403 A6,6 0 0 1 1014,409 H956 A6,6 0 0 1 950,403 V393 A6,6 0 0 1 956,387 Z" />
+    <text x="985" y="403" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#F0FDF4" d="M64,421 H1216 A4,4 0 0 1 1220,425 V453 A4,4 0 0 1 1216,457 H64 A4,4 0 0 1 60,453 V425 A4,4 0 0 1 64,421 Z" />
+    <circle cx="85" cy="439" r="8" fill="#10B981" />
+    <text x="85" y="444" font-size="11" fill="#FFFFFF" text-anchor="middle">P7</text>
+    <text x="380" y="445" fill="#1E293B">小批量试产阶段</text>
+    <text x="720" y="445" fill="#64748B">2026-05-15</text>
+    <path fill="#D1FAE5" d="M956,428 H1014 A6,6 0 0 1 1020,434 V444 A6,6 0 0 1 1014,450 H956 A6,6 0 0 1 950,444 V434 A6,6 0 0 1 956,428 Z" />
+    <text x="985" y="444" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#F0FDF4" d="M64,462 H1216 A4,4 0 0 1 1220,466 V494 A4,4 0 0 1 1216,498 H64 A4,4 0 0 1 60,494 V466 A4,4 0 0 1 64,462 Z" />
+    <circle cx="85" cy="480" r="8" fill="#10B981" />
+    <text x="85" y="485" font-size="11" fill="#FFFFFF" text-anchor="middle">P8</text>
+    <text x="380" y="486" fill="#1E293B">导入量产阶段</text>
+    <text x="720" y="486" fill="#64748B">2026-05-15</text>
+    <path fill="#D1FAE5" d="M956,469 H1014 A6,6 0 0 1 1020,475 V485 A6,6 0 0 1 1014,491 H956 A6,6 0 0 1 950,485 V475 A6,6 0 0 1 956,469 Z" />
+    <text x="985" y="485" font-size="12" font-weight="600" fill="#059669" text-anchor="middle">已完成</text>
+
+    
+    <path fill="#FEF9E7" stroke="#FCD34D" stroke-width="1" d="M64,503 H1216 A4,4 0 0 1 1220,507 V535 A4,4 0 0 1 1216,539 H64 A4,4 0 0 1 60,535 V507 A4,4 0 0 1 64,503 Z" />
+    <circle cx="85" cy="521" r="8" fill="#F59E0B" />
+    <text x="85" y="526" font-size="11" fill="#FFFFFF" text-anchor="middle">P9</text>
+    <text x="380" y="527" fill="#1E293B" font-weight="600">新品上市阶段</text>
+    <text x="720" y="527" fill="#64748B">2026-05-22</text>
+    <path fill="#FEF3C7" d="M956,510 H1014 A6,6 0 0 1 1020,516 V526 A6,6 0 0 1 1014,532 H956 A6,6 0 0 1 950,526 V516 A6,6 0 0 1 956,510 Z" />
+    <text x="985" y="526" font-size="12" font-weight="600" fill="#D97706" text-anchor="middle">进行中</text>
+
+    
+    <path fill="#F8FAFC" d="M64,544 H1216 A4,4 0 0 1 1220,548 V576 A4,4 0 0 1 1216,580 H64 A4,4 0 0 1 60,576 V548 A4,4 0 0 1 64,544 Z" />
+    <circle cx="85" cy="562" r="8" fill="#94A3B8" />
+    <text x="85" y="567" font-size="11" fill="#FFFFFF" text-anchor="middle">P10</text>
+    <text x="380" y="568" fill="#94A3B8">上市复盘阶段</text>
+    <text x="720" y="568" fill="#94A3B8">2026-05-29</text>
+    <path fill="#F1F5F9" d="M956,551 H1014 A6,6 0 0 1 1020,557 V567 A6,6 0 0 1 1014,573 H956 A6,6 0 0 1 950,567 V557 A6,6 0 0 1 956,551 Z" />
+    <text x="985" y="567" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">未开始</text>
+
+    
+    <path fill="#F8FAFC" d="M64,585 H1216 A4,4 0 0 1 1220,589 V617 A4,4 0 0 1 1216,621 H64 A4,4 0 0 1 60,617 V589 A4,4 0 0 1 64,585 Z" />
+    <circle cx="85" cy="603" r="8" fill="#94A3B8" />
+    <text x="85" y="608" font-size="11" fill="#FFFFFF" text-anchor="middle">P11</text>
+    <text x="380" y="609" fill="#94A3B8">EOL阶段</text>
+    <text x="720" y="609" fill="#94A3B8">2026-06-30</text>
+    <path fill="#F1F5F9" d="M956,592 H1014 A6,6 0 0 1 1020,598 V608 A6,6 0 0 1 1014,614 H956 A6,6 0 0 1 950,608 V598 A6,6 0 0 1 956,592 Z" />
+    <text x="985" y="608" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">未开始</text>
+  </g>
+
+  <rect x="60" y="650" width="1160" height="1" fill="#E2E8F0" />
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12">
+    <path fill="#10B981" d="M62,665 H72 A2,2 0 0 1 74,667 V677 A2,2 0 0 1 72,679 H62 A2,2 0 0 1 60,677 V667 A2,2 0 0 1 62,665 Z" />
+    <text x="80" y="677" fill="#475569">已完成 8</text>
+    <path fill="#F59E0B" d="M162,665 H172 A2,2 0 0 1 174,667 V677 A2,2 0 0 1 172,679 H162 A2,2 0 0 1 160,677 V667 A2,2 0 0 1 162,665 Z" />
+    <text x="180" y="677" fill="#475569">进行中 1</text>
+    <path fill="#94A3B8" d="M262,665 H272 A2,2 0 0 1 274,667 V677 A2,2 0 0 1 272,679 H262 A2,2 0 0 1 260,677 V667 A2,2 0 0 1 262,665 Z" />
+    <text x="280" y="677" fill="#475569">未开始 2</text>
+  </g>
+</svg>

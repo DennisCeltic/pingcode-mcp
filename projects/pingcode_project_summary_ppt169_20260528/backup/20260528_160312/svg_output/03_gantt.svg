@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="stage1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="stage2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="stage3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#6D28D9" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="stage4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="stage5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="barShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="1"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.12"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)"/>
+
+  <text x="60" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="28" font-weight="700" fill="#1E293B" letter-spacing="1">项目主计划 — 甘特图</text>
+  <text x="60" y="78" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="15" fill="#64748B">2026年5月 — 2026年12月 · 5个阶段 · 6个里程碑</text>
+  <text x="1220" y="50" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="13" fill="#94A3B8" text-anchor="end">P03</text>
+
+  <!-- Month header: May through Dec, each 120px, starts at x=280 -->
+  <rect x="280" y="95" width="960" height="28" rx="4" fill="#F1F5F9"/>
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">
+    <text x="340" y="114">5月</text>
+    <text x="460" y="114">6月</text>
+    <text x="580" y="114">7月</text>
+    <text x="700" y="114">8月</text>
+    <text x="820" y="114">9月</text>
+    <text x="940" y="114">10月</text>
+    <text x="1060" y="114">11月</text>
+    <text x="1180" y="114">12月</text>
+  </g>
+  <g stroke="#E2E8F0" stroke-width="1">
+    <line x1="400" y1="95" x2="400" y2="615"/>
+    <line x1="520" y1="95" x2="520" y2="615"/>
+    <line x1="640" y1="95" x2="640" y2="615"/>
+    <line x1="760" y1="95" x2="760" y2="615"/>
+    <line x1="880" y1="95" x2="880" y2="615"/>
+    <line x1="1000" y1="95" x2="1000" y2="615"/>
+    <line x1="1120" y1="95" x2="1120" y2="615"/>
+  </g>
+
+  <!-- Row backgrounds -->
+  <rect x="40" y="135" width="240" height="56" fill="#F8FAFC"/>
+  <rect x="40" y="191" width="240" height="56" fill="#F1F5F9"/>
+  <rect x="40" y="247" width="240" height="56" fill="#F8FAFC"/>
+  <rect x="40" y="303" width="240" height="56" fill="#F1F5F9"/>
+  <rect x="40" y="359" width="240" height="56" fill="#F8FAFC"/>
+
+  <!-- Stage labels -->
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" font-weight="600" fill="#1E293B">
+    <text x="55" y="169">阶段1: 项目准备与系统部署</text>
+    <text x="55" y="225">阶段2: 系统试点</text>
+    <text x="55" y="281">阶段3: 系统上线</text>
+    <text x="55" y="337">阶段4: 上线通知</text>
+    <text x="55" y="393">阶段5: 跟踪验收</text>
+  </g>
+
+  <!-- Gantt bars -->
+  <g filter="url(#barShadow)">
+    <!-- Stage 1: 5/21-6/12, x=310, w=75 -->
+    <rect x="310" y="155" width="78" height="24" rx="4" fill="url(#stage1)"/>
+    <text x="349" y="172" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">5/21-6/12</text>
+
+    <!-- Stage 2: 6/15-6/26, x=430, w=35 -->
+    <rect x="428" y="211" width="37" height="24" rx="4" fill="url(#stage2)"/>
+    <text x="446" y="228" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">6/15-26</text>
+
+    <!-- Stage 3: 6/22-6/29, x=445, w=28 -->
+    <rect x="443" y="267" width="30" height="24" rx="4" fill="url(#stage3)"/>
+    <text x="458" y="284" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">6/22-29</text>
+
+    <!-- Stage 4: 6/30, x=508 -->
+    <rect x="508" y="323" width="4" height="24" rx="2" fill="url(#stage4)"/>
+    <text x="528" y="340" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#1E293B">6/30</text>
+
+    <!-- Stage 5: 6/30-12/31, x=508, w=698 -->
+    <rect x="508" y="379" width="698" height="24" rx="4" fill="url(#stage5)"/>
+    <text x="857" y="396" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">6/30 — 12/31（持续跟踪）</text>
+  </g>
+
+  <!-- Milestones (diamonds) -->
+  <polygon points="386,189 393,179 400,189 393,199" fill="#F59E0B"/>
+  <text x="393" y="175" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">项目启动会</text>
+
+  <polygon points="458,189 465,179 472,189 465,199" fill="#F59E0B"/>
+  <text x="465" y="175" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">初始配置完成</text>
+
+  <polygon points="496,245 503,235 510,245 503,255" fill="#F59E0B"/>
+  <text x="503" y="231" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">试运行完成</text>
+
+  <polygon points="515,301 522,291 529,301 522,311" fill="#F59E0B"/>
+  <text x="522" y="287" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">培训完成</text>
+
+  <polygon points="508,357 515,347 522,357 515,367" fill="#EF4444"/>
+  <text x="515" y="343" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="10" font-weight="600" fill="#EF4444" text-anchor="middle">正式上线</text>
+
+  <polygon points="1150,413 1157,403 1164,413 1157,423" fill="#10B981"/>
+  <text x="1157" y="438" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="10" font-weight="600" fill="#10B981" text-anchor="middle">验收通过</text>
+
+  <!-- Legend -->
+  <g transform="translate(60, 460)">
+    <rect x="0" y="0" width="14" height="14" rx="2" fill="url(#stage1)"/>
+    <text x="22" y="12" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#475569">准备与部署</text>
+    <rect x="110" y="0" width="14" height="14" rx="2" fill="url(#stage2)"/>
+    <text x="132" y="12" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#475569">系统试点</text>
+    <rect x="210" y="0" width="14" height="14" rx="2" fill="url(#stage3)"/>
+    <text x="232" y="12" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#475569">系统上线</text>
+    <rect x="310" y="0" width="14" height="14" rx="2" fill="url(#stage4)"/>
+    <text x="332" y="12" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#475569">上线通知</text>
+    <rect x="410" y="0" width="14" height="14" rx="2" fill="url(#stage5)"/>
+    <text x="432" y="12" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#475569">跟踪验收</text>
+    <polygon points="520,7 527,-3 534,7 527,17" fill="#F59E0B"/>
+    <text x="547" y="12" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#475569">里程碑</text>
+  </g>
+
+  <!-- Stage 1 detail tasks -->
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#64748B">
+    <text x="60" y="500">关键活动:</text>
+    <circle cx="75" cy="517" r="3" fill="#2563EB"/>
+    <text x="85" y="521">合同签订 (5/21) → 团队组建 (5/21-22) → 业务梳理 (5/22-25)</text>
+    <circle cx="75" cy="537" r="3" fill="#2563EB"/>
+    <text x="85" y="541">系统部署 (5/25-26) → 需求调研 (5/26-28) → 项目启动会 (5/29)</text>
+    <circle cx="75" cy="557" r="3" fill="#2563EB"/>
+    <text x="85" y="561">方案输出 (5/29-6/2) → 权限收集 (6/1-5) → 初始配置 (6/3-12)</text>
+  </g>
+
+  <!-- Stage 2-3-4 detail tasks -->
+  <g font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#64748B">
+    <circle cx="75" cy="585" r="3" fill="#10B981"/>
+    <text x="85" y="589">试点培训 (6/15) → 试运行 (6/15-26) → 答疑优化 (6/15-26)</text>
+    <circle cx="75" cy="605" r="3" fill="#7C3AED"/>
+    <text x="85" y="609">优化手册 (6/22-26) → 管理员培训 (6/29) → 操作培训 (6/29) → 上线通知 (6/30)</text>
+  </g>
+
+  <rect x="60" y="625" width="1160" height="1" fill="#E2E8F0"/>
+  <text x="60" y="660" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8">总计 19 个任务 | 管理员: 小冯 | 项目周期: 约 7 个月</text>
+  <text x="1220" y="660" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="end">PingCode系统实施</text>
+</svg>

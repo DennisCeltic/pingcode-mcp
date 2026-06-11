@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2"/>
+      <feFlood flood-color="#0F172A" flood-opacity="0.06"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+
+  <rect x="0" y="0" width="1280" height="5" fill="url(#headerAccent)"/>
+
+  <text x="60" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="13" font-weight="600" fill="#2563EB" letter-spacing="2">项目概述</text>
+  <text x="1220" y="55" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="13" fill="#94A3B8" text-anchor="end">P02</text>
+
+  <text x="60" y="105" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="32" font-weight="700" fill="#1E293B" letter-spacing="1">PingCode系统实施</text>
+  <text x="60" y="140" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="18" fill="#64748B">金溢科技研发管理平台部署与上线</text>
+
+  <rect x="60" y="175" width="680" height="1" fill="#E2E8F0"/>
+
+  <text x="60" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" font-weight="600" fill="#1E293B">项目背景</text>
+  <text x="60" y="245" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" fill="#64748B">
+    金溢科技需要一套专业的研发管理平台来支撑软件开发全生命周期管理。
+  </text>
+  <text x="60" y="270" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" fill="#64748B">
+    PingCode 作为一体化研发管理工具，覆盖项目管理、需求管理、测试管理、知识管理，
+  </text>
+  <text x="60" y="295" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" fill="#64748B">
+    能够满足企业从需求到上线的全流程管理需求。
+  </text>
+
+  <text x="60" y="345" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" font-weight="600" fill="#1E293B">项目目标</text>
+  <text x="60" y="375" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" fill="#64748B">
+    完成系统部署、需求调研、方案输出、系统试点、培训、正式上线与跟踪验收，
+  </text>
+  <text x="60" y="400" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif"
+        font-size="16" fill="#64748B">
+    确保金溢科技团队顺利使用 PingCode 进行日常研发管理。
+  </text>
+
+  <rect x="800" y="155" width="420" height="130" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow)"/>
+  <rect x="800" y="155" width="420" height="5" rx="2" fill="url(#headerAccent)"/>
+  <text x="840" y="200" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">项目周期</text>
+  <text x="840" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="36" font-weight="800" fill="#1E293B">2026.05 — 2026.12</text>
+  <text x="840" y="270" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#94A3B8">约 7 个月</text>
+
+  <rect x="800" y="305" width="200" height="130" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow)"/>
+  <rect x="800" y="305" width="6" height="130" rx="3" fill="#2563EB"/>
+  <text x="830" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">阶段数</text>
+  <text x="830" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="48" font-weight="800" fill="#1E293B">5</text>
+
+  <rect x="1020" y="305" width="200" height="130" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow)"/>
+  <rect x="1020" y="305" width="6" height="130" rx="3" fill="#F59E0B"/>
+  <text x="1050" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">任务总数</text>
+  <text x="1050" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="48" font-weight="800" fill="#1E293B">19</text>
+
+  <rect x="800" y="455" width="420" height="110" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="840" y="500" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#64748B">角色分工</text>
+  <text x="840" y="528" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#1E293B">乙方 PM — 系统部署、方案、培训、答疑</text>
+  <text x="840" y="550" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#1E293B">甲方 IT — 服务器、网络、域名配置</text>
+
+  <rect x="60" y="660" width="1160" height="1" fill="#E2E8F0"/>
+  <text x="60" y="695" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#94A3B8">水瀑布项目管理  ·  PingCode系统实施</text>
+</svg>
