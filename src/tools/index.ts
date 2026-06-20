@@ -9,3 +9,4 @@ export * from './attachment.js';
 export * from './report.js';
 export * from './prd.js';
 export * from './ppt.js';
+export * from './insights.js';

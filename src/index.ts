@@ -56,6 +56,12 @@ import { createFromPrd, type CreateFromPrdParams } from './tools/prd.js';
 import { createFromWbs, type CreateFromWbsParams } from './tools/wbs.js';
 import { listActivities } from './tools/activity.js';
 import { exportPptx } from './tools/ppt.js';
+import {
+  generateProjectHealthReport,
+  summarizeWorkItemContext,
+  generateTeamLoadReport,
+  scanDeliveryRisks,
+} from './tools/insights.js';
 import { logWarn, logInfo, logError } from './utils/logger.js';
 import { validateArgs, type JsonSchema } from './utils/validation.js';
 
@@ -206,6 +212,7 @@ const TOOLS: Tool[] = [
         state_ids: { type: 'string', description: '状态ID，使用逗号分割，最多20个' },
         sprint_ids: { type: 'string', description: '迭代ID，使用逗号分割，最多20个' },
         keywords: { type: 'string', description: '关键词，支持工作项编号和标题' },
+        updated_between: { type: 'string', description: '按更新时间筛选，格式为 startTs,endTs（十位时间戳）' },
         page_index: { type: 'integer', description: '页码，从0开始', default: 0 },
         page_size: { type: 'integer', description: '每页数量', default: 30 },
       },
@@ -481,6 +488,85 @@ const TOOLS: Tool[] = [
       type: 'object',
       properties: {},
       required: [],
+    },
+  },
+  {
+    name: 'pingcode__project_health_report',
+    description:
+      '生成项目/迭代健康度报告，聚合状态分布、逾期、临期、无负责人、长期未更新和疑似阻塞工作项。' +
+      '适合 PM/TL 做周会、项目巡检和风险复盘。',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        project_id: { type: 'string', description: '项目ID；不填则扫描当前账号可见的工作项' },
+        sprint_id: { type: 'string', description: '迭代ID，可与 project_id 组合使用' },
+        assignee_ids: { type: 'string', description: '负责人ID，使用逗号分割，最多20个' },
+        state_ids: { type: 'string', description: '状态ID，使用逗号分割，最多20个' },
+        type_ids: { type: 'string', description: '工作项类型ID，使用逗号分割，如 story,task,bug' },
+        updated_between: { type: 'string', description: '按更新时间筛选，格式为 startTs,endTs（十位时间戳）' },
+        include_done: { type: 'boolean', description: '风险明细是否包含已完成/已关闭项，默认 false' },
+        stale_days: { type: 'integer', description: '多少天未更新视为停滞，默认 7' },
+        due_soon_days: { type: 'integer', description: '多少天内到期视为临期，默认 7' },
+        max_items: { type: 'integer', description: '最大扫描工作项数量，默认 500，最多 2000' },
+      },
+    },
+  },
+  {
+    name: 'pingcode__work_item_context',
+    description:
+      '汇总单个工作项的上下文，包括基本信息、描述摘要、最近活动、最近评论、附件和 AI 接手提示。' +
+      '适合研发接任务、TL review 风险、PM 快速理解需求背景。',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        work_item_id: { type: 'string', description: '工作项ID' },
+        activity_limit: { type: 'integer', description: '最近活动条数，默认 5' },
+        comment_limit: { type: 'integer', description: '最近评论条数，默认 5' },
+        include_attachments: { type: 'boolean', description: '是否读取附件列表，默认 true' },
+      },
+      required: ['work_item_id'],
+    },
+  },
+  {
+    name: 'pingcode__team_load_report',
+    description:
+      '生成团队负载报告，按负责人聚合活跃工作项、逾期、临期、停滞、预估/剩余工时。' +
+      '如果传入 start_at/end_at，还会尝试汇总成员在该时间段登记的工时。',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        project_id: { type: 'string', description: '项目ID；不填则扫描当前账号可见的工作项' },
+        sprint_id: { type: 'string', description: '迭代ID' },
+        assignee_ids: { type: 'string', description: '负责人ID，使用逗号分割，最多20个' },
+        state_ids: { type: 'string', description: '状态ID，使用逗号分割，最多20个' },
+        type_ids: { type: 'string', description: '工作项类型ID，使用逗号分割' },
+        include_done: { type: 'boolean', description: '是否包含已完成/已关闭项，默认 false' },
+        stale_days: { type: 'integer', description: '多少天未更新视为停滞，默认 7' },
+        due_soon_days: { type: 'integer', description: '多少天内到期视为临期，默认 7' },
+        start_at: { type: 'number', description: '工时统计开始时间（十位时间戳），需与 end_at 同时传入' },
+        end_at: { type: 'number', description: '工时统计结束时间（十位时间戳），需与 start_at 同时传入' },
+        max_items: { type: 'integer', description: '最大扫描工作项数量，默认 500，最多 2000' },
+      },
+    },
+  },
+  {
+    name: 'pingcode__risk_scan',
+    description:
+      '扫描交付风险清单，按高/中/低输出逾期、阻塞、无负责人、临期、停滞等可行动风险。' +
+      '适合站会前巡检、TL 排雷、PM 周报风险页。',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        project_id: { type: 'string', description: '项目ID；不填则扫描当前账号可见的工作项' },
+        sprint_id: { type: 'string', description: '迭代ID' },
+        assignee_ids: { type: 'string', description: '负责人ID，使用逗号分割，最多20个' },
+        state_ids: { type: 'string', description: '状态ID，使用逗号分割，最多20个' },
+        type_ids: { type: 'string', description: '工作项类型ID，使用逗号分割' },
+        include_done: { type: 'boolean', description: '是否包含已完成/已关闭项，默认 false' },
+        stale_days: { type: 'integer', description: '多少天未更新视为停滞，默认 7' },
+        due_soon_days: { type: 'integer', description: '多少天内到期视为临期，默认 7' },
+        max_items: { type: 'integer', description: '最大扫描工作项数量，默认 500，最多 2000' },
+      },
     },
   },
   {
@@ -868,6 +954,7 @@ async function handleToolCall(request: CallToolRequest) {
           state_ids: args?.state_ids as string | undefined,
           sprint_ids: args?.sprint_ids as string | undefined,
           keywords: args?.keywords as string | undefined,
+          updated_between: args?.updated_between as string | undefined,
           page_index: args?.page_index as number | undefined,
           page_size: args?.page_size as number | undefined,
         });
@@ -1202,6 +1289,92 @@ async function handleToolCall(request: CallToolRequest) {
 
       case 'pingcode__weekly_report': {
         const data = await generateWeeklyReport();
+        return {
+          content: [
+            {
+              type: 'text',
+              text: data,
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__project_health_report': {
+        const data = await generateProjectHealthReport({
+          project_id: args?.project_id as string | undefined,
+          sprint_id: args?.sprint_id as string | undefined,
+          assignee_ids: args?.assignee_ids as string | undefined,
+          state_ids: args?.state_ids as string | undefined,
+          type_ids: args?.type_ids as string | undefined,
+          updated_between: args?.updated_between as string | undefined,
+          include_done: args?.include_done as boolean | undefined,
+          stale_days: args?.stale_days as number | undefined,
+          due_soon_days: args?.due_soon_days as number | undefined,
+          max_items: args?.max_items as number | undefined,
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: data,
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__work_item_context': {
+        const data = await summarizeWorkItemContext({
+          work_item_id: String(args?.work_item_id),
+          activity_limit: args?.activity_limit as number | undefined,
+          comment_limit: args?.comment_limit as number | undefined,
+          include_attachments: args?.include_attachments as boolean | undefined,
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: data,
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__team_load_report': {
+        const data = await generateTeamLoadReport({
+          project_id: args?.project_id as string | undefined,
+          sprint_id: args?.sprint_id as string | undefined,
+          assignee_ids: args?.assignee_ids as string | undefined,
+          state_ids: args?.state_ids as string | undefined,
+          type_ids: args?.type_ids as string | undefined,
+          include_done: args?.include_done as boolean | undefined,
+          stale_days: args?.stale_days as number | undefined,
+          due_soon_days: args?.due_soon_days as number | undefined,
+          start_at: args?.start_at as number | undefined,
+          end_at: args?.end_at as number | undefined,
+          max_items: args?.max_items as number | undefined,
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: data,
+            },
+          ],
+        };
+      }
+
+      case 'pingcode__risk_scan': {
+        const data = await scanDeliveryRisks({
+          project_id: args?.project_id as string | undefined,
+          sprint_id: args?.sprint_id as string | undefined,
+          assignee_ids: args?.assignee_ids as string | undefined,
+          state_ids: args?.state_ids as string | undefined,
+          type_ids: args?.type_ids as string | undefined,
+          include_done: args?.include_done as boolean | undefined,
+          stale_days: args?.stale_days as number | undefined,
+          due_soon_days: args?.due_soon_days as number | undefined,
+          max_items: args?.max_items as number | undefined,
+        });
         return {
           content: [
             {

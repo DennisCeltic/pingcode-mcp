@@ -333,6 +333,15 @@ pingcode-mcp status
 | `pingcode__weekly_report` | 生成本周工作报告（含更新工作项、工时明细、汇总，支持企业模式） | 无 |
 | `pingcode__list_activities` | 获取工作项/测试用例的变更活动记录（变更历史、状态流转、字段修改） | `principal_type`, `principal_id` |
 
+### 洞察与风险巡检
+
+| Tool | 描述 | 必填参数 |
+|------|------|----------|
+| `pingcode__project_health_report` | 生成项目/迭代健康度报告，聚合状态分布、逾期、临期、无负责人、长期未更新和疑似阻塞工作项 | 无 |
+| `pingcode__work_item_context` | 汇总单个工作项上下文，包括基本信息、描述摘要、最近活动、评论、附件和 AI 接手提示 | `work_item_id` |
+| `pingcode__team_load_report` | 按负责人生成团队负载报告，包含活跃项、逾期、临期、停滞、预估/剩余工时，可选登记工时 | 无 |
+| `pingcode__risk_scan` | 扫描交付风险清单，按高/中/低输出逾期、阻塞、无负责人、临期、停滞等风险 | 无 |
+
 ### PRD 需求创建
 
 | Tool | 描述 | 必填参数 |
@@ -447,6 +456,27 @@ AI: [调用 pingcode__weekly_report]
   - 本周涉及的工作项列表（来源1: updated_between 查询 + 来源2: 工时反查）
   - 本周工时明细表（日期、工时、工作项、项目、审核状态）
   - 汇总：涉及工作项数 + 工时合计
+```
+
+### 项目健康度与风险巡检
+```
+用户: 帮我看一下 DEMO 项目现在健康不健康
+AI: [调用 pingcode__project_health_report, project_id="xxx"]
+
+→ 输出 Markdown 健康度报告：
+  - 健康度：绿色 / 黄色 / 红色
+  - 关键指标：逾期、临期、无负责人、停滞、疑似阻塞
+  - 状态分布、负责人负载 Top 10
+  - 高优先级关注项与建议动作
+
+用户: 站会前帮我扫一下交付风险
+AI: [调用 pingcode__risk_scan, project_id="xxx", sprint_id="yyy"]
+
+用户: 这个任务我接手前先帮我读一下上下文
+AI: [调用 pingcode__work_item_context, work_item_id="zzz"]
+
+用户: 看一下这个迭代大家负载是否均衡
+AI: [调用 pingcode__team_load_report, sprint_id="yyy"]
 ```
 
 ### PRD 需求创建
