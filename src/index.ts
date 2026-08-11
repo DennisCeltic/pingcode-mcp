@@ -1070,7 +1070,7 @@ async function handleToolCall(request: CallToolRequest) {
         params.append('page_size', String(args?.page_size ?? 30));
 
         const query = params.toString() ? `?${params.toString()}` : '';
-        const data = await pingCodeClient.get(`/v1/products${query}`);
+        const data = await pingCodeClient.get(`/v1/ship/products${query}`);
         return {
           content: [
             {
