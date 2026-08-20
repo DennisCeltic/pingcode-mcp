@@ -12,7 +12,7 @@ export async function addProductMembers(params: AddProductMembersParams) {
     const body: { user_id: string; role_id?: string } = { user_id: uid };
     if (params.role_id) body.role_id = params.role_id;
     const result = await pingCodeClient.post(
-      `/v1/products/${params.product_id}/members`,
+      `/v1/ship/products/${params.product_id}/members`,
       body,
     );
     results.push(result);
