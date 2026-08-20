@@ -6,6 +6,7 @@ export interface ListWorkItemsParams {
     state_ids?: string;
     sprint_ids?: string;
     keywords?: string;
+    updated_between?: string;
     page_index?: number;
     page_size?: number;
 }
